@@ -1,0 +1,229 @@
+.hero {
+  background: url('../../public/assets/heroBg.png') top center no-repeat;
+  background-size: 100% 100%;
+  color: var(--white);
+
+  .heroImage {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+
+      &:last-child {
+        animation: swapImage 4s ease-in-out infinite forwards;
+      }
+    }
+
+    @keyframes swapImage {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+
+  .cursor {
+    animation: blinking 0.5s ease-in-out infinite forwards;
+
+    @keyframes blinking {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+}
+.cardWrapper {
+  margin-top: 5em;
+
+  .savingCard,
+  .convertCard,
+  .virtualCard,
+  .convertCard,
+  .sendCard {
+    figure {
+      min-height: 486px;
+      border-radius: 32px;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        margin: 0 auto;
+        width: 90%;
+        // height: 100%;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .sendCard {
+    figure {
+      background: #5779f4;
+    }
+
+    article {
+      padding: 56px 80px;
+      background: #e7ecfd;
+      border-top-right-radius: 16px;
+      border-bottom-right-radius: 16px;
+    }
+
+    @media screen and (max-width: 900px) {
+      figure {
+        min-height: 350px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      article {
+        padding: 16px 20px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      figure {
+        min-height: 486px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      article {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+      }
+    }
+  }
+
+  .virtualCard {
+    figure {
+      background: #b4a6ff;
+    }
+
+    article {
+      padding: 56px 80px;
+      background: #e7ecfd;
+      border-top-left-radius: 16px;
+      border-bottom-left-radius: 16px;
+    }
+
+    @media screen and (max-width: 900px) {
+      figure {
+        min-height: 350px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      article {
+        padding: 16px 20px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      figure {
+        min-height: 486px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      article {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+      }
+    }
+  }
+
+  .savingCard {
+    figure {
+      background: #ffefb3;
+    }
+
+    article {
+      padding: 56px 80px;
+      background: #fffbe5;
+      border-top-right-radius: 16px;
+      border-bottom-right-radius: 16px;
+    }
+
+    @media screen and (max-width: 900px) {
+      figure {
+        min-height: 350px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      article {
+        padding: 16px 20px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      figure {
+        min-height: 486px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      article {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+      }
+    }
+  }
+
+  .convertCard {
+    figure {
+      background: #71da8c;
+    }
+
+    article {
+      padding: 56px 80px;
+      background: #ebfaef;
+      border-top-left-radius: 16px;
+      border-bottom-left-radius: 16px;
+    }
+
+    @media screen and (max-width: 900px) {
+      figure {
+        min-height: 350px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      article {
+        padding: 16px 20px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      figure {
+        min-height: 486px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      article {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+      }
+    }
+  }
+}
