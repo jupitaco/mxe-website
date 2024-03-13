@@ -10,11 +10,11 @@ const Hero = () => {
     <section className={`${styles.hero} min-h-screen py-10`}>
       <section className='container flex flex-col justify-between'>
         <HeroTextTypeWriter styles={styles} />
-        <div className='min-h-[90vh] '>
+        <div className='h-[70vh] md:h-[90vh] '>
           <HeroImages />
         </div>
 
-        <div className='flex justify-center gap-3 items-center'>
+        <div className='flex justify-center gap-3 items-center mt-10 w-9/12 mx-auto'>
           <AppStore fill='#0828B1' />
           <GooglePlay fill='#0828B1' />{' '}
         </div>

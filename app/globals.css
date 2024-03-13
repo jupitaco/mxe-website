@@ -155,6 +155,11 @@ select {
   transition: all 1s ease-in-out;
 }
 
+.quote h3 {
+  font-size: 40px;
+  color: #8e8e8a;
+}
+
 /* ====Media Query Start ===== */
 @media screen and (max-width: 900px) {
   h1,
@@ -175,3 +180,48 @@ select {
   }
 }
 /* ====Media Query Start ===== */
+
+#Line {
+  stroke-dasharray: 662.1567993164062;
+  stroke-dashoffset: 5;
+  animation: draw 3s ease infinite;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 662.1567993164062;
+    /* transform: scale(1.5); */
+    fill: green;
+  }
+}
+
+/* svg {
+  color: dodgerblue;
+}
+
+circle {
+
+  stroke-dasharray: 1538.7584228515625;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s ease;
+  animation: draw 3s ease infinite;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 1538.7584228515625;
+     fill: green;
+  }
+} */
+
+#myPth {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 5s linear forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

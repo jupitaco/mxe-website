@@ -134,7 +134,13 @@ const NavBar = () => {
                             className='flex items-center gap-1 justify-center'
                           >
                             Products
-                            <IoChevronDown />
+                            <IoChevronDown
+                              className={
+                                toggleDropdown
+                                  ? 'rotate-180 transition-all'
+                                  : ''
+                              }
+                            />
                           </span>
                           {toggleDropdown && (
                             <div

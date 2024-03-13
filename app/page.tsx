@@ -136,6 +136,35 @@ export default function Home() {
             </div>
           </article>
         </section>
+        <section
+          className={`${styles.savingCard} flex flex-col md:flex-row justify-center items-center my-10`}
+        >
+          <figure data-aos='fade-up' className='w-full md:w-4/12'>
+            <Image
+              data-aos='fade-up'
+              data-aos-delay='300'
+              src={images.savingPhone}
+              alt=''
+            />{' '}
+          </figure>
+          <article
+            data-aos='fade-right'
+            data-aos-delay='300'
+            className='w-full md:w-8/12'
+          >
+            <h3>Effortless Bill Payments</h3>
+            <p className='my-5'>
+              Turn the chore of bill payments into a breeze. Categorize bills,
+              schedule payments with precision, and ensure you're always ahead
+              with reminders that keep you on track.
+            </p>
+
+            <div className='flex justify-center gap-3 w-full md:w-8/12'>
+              <AppStore fill='#0828B1' />
+              <GooglePlay fill='#0828B1' />{' '}
+            </div>
+          </article>
+        </section>
       </section>
 
       <TransformFinances bgColor='bg-[#051348]' />
