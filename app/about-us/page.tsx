@@ -20,14 +20,14 @@ const page = () => {
         >
           <h1 className='w-full md:w-8/12'>
             Creating a Seamless Financial Ecosystem that Caters to{' '}
-            <em className={`${styles.Your} relative z-10`}>
+            <b className={`${styles.Your} relative z-10`}>
               {' '}
               Your
               <LineIcon
                 // data-aos='fade-in'
                 className='absolute  bottom-0 left-0 right-0 z-[-1]'
               />
-            </em>{' '}
+            </b>{' '}
             Diverse Needs.
           </h1>
 
