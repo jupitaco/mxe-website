@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './AboutUs.module.scss';
 import { BsStarFill } from 'react-icons/bs';
-import { LineIcon } from '@/components/SVGs/Icons';
 import Image from 'next/image';
 import { images } from '@/exports/images';
 import TransformFinances from '@/components/TransformFinances';
 import ContactHeroSvg from '@/components/SVGs/ContactHeroSvg';
+import LineIcon from '@/components/SVGs/LineIcon';
 
 const page = () => {
   return (
@@ -13,13 +13,20 @@ const page = () => {
       <section
         className={`${styles.companyHero}   grid place-items-center mb-[100px] h-screen lg:h-[886px] `}
       >
-        <article className='container flex flex-col justify-between h-[60%] '>
+        <article
+          data-aos='fade-left'
+          data-aos-duration='1500'
+          className='container flex flex-col justify-between h-[60%] '
+        >
           <h1 className='w-full md:w-8/12'>
             Creating a Seamless Financial Ecosystem that Caters to{' '}
             <b className={`${styles.Your} relative z-10`}>
               {' '}
               Your
-              <LineIcon className='absolute  bottom-0 left-0 right-0 z-[-1]' />
+              <LineIcon
+                // data-aos='fade-in'
+                className='absolute  bottom-0 left-0 right-0 z-[-1]'
+              />
             </b>{' '}
             Diverse Needs.
           </h1>
@@ -68,15 +75,15 @@ const page = () => {
 
         <article className='quote text-center w-full md:w-9/12 mx-auto mb-[100px]'>
           <h3 className='  mb-5'>
-            "As we stand at the intersection of finance and technology, the MXE
-            story continues to unfold. Our journey is fueled by a commitment to
-            innovation, security, and the empowerment of individuals in their
-            financial endeavors."
+            &quote;As we stand at the intersection of finance and technology,
+            the MXE story continues to unfold. Our journey is fueled by a
+            commitment to innovation, security, and the empowerment of
+            individuals in their financial endeavors.&quot;
           </h3>
           <p>Michael Elvis - CEO</p>
         </article>
 
-        <TransformFinances bgColor='bg-[#051348]' />
+        <TransformFinances brands bgColor='bg-[#051348]' />
       </section>
     </main>
   );

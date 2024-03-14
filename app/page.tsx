@@ -93,11 +93,12 @@ export default function Home() {
           >
             <h3>Steady Savings, Stable Future - Save in USD</h3>
             <p className='my-5'>
-              Step into a realm of financial certainty with MXE's USD Savings
-              feature. In an ever-evolving economic landscape, secure your
-              savings with the unwavering stability of the United States Dollar.
-              Our USD Savings feature provides you with a reliable sanctuary for
-              your hard-earned assets, shielding them from market volatility.
+              Step into a realm of financial certainty with MXE&apos;s USD
+              Savings feature. In an ever-evolving economic landscape, secure
+              your savings with the unwavering stability of the United States
+              Dollar. Our USD Savings feature provides you with a reliable
+              sanctuary for your hard-earned assets, shielding them from market
+              volatility.
             </p>
 
             <div className='flex justify-center gap-3 w-full md:w-8/12'>
@@ -124,10 +125,10 @@ export default function Home() {
           >
             <h3>Dynamic Currency Conversion</h3>
             <p className='my-5'>
-              Stay in control of your finances with MXE's currency conversion.
-              Easily convert your funds into different currencies for seamless
-              transactions worldwide, ensuring your purchasing power is
-              optimized wherever you go.
+              Stay in control of your finances with MXE&apos;s currency
+              conversion. Easily convert your funds into different currencies
+              for seamless transactions worldwide, ensuring your purchasing
+              power is optimized wherever you go.
             </p>
 
             <div className='flex justify-center gap-3 w-full md:w-8/12'>
@@ -155,8 +156,8 @@ export default function Home() {
             <h3>Effortless Bill Payments</h3>
             <p className='my-5'>
               Turn the chore of bill payments into a breeze. Categorize bills,
-              schedule payments with precision, and ensure you're always ahead
-              with reminders that keep you on track.
+              schedule payments with precision, and ensure you&apos;e always
+              ahead with reminders that keep you on track.
             </p>
 
             <div className='flex justify-center gap-3 w-full md:w-8/12'>
@@ -167,7 +168,7 @@ export default function Home() {
         </section>
       </section>
 
-      <TransformFinances bgColor='bg-[#051348]' />
+      <TransformFinances brands bgColor='bg-[#051348]' />
     </main>
   );
 }

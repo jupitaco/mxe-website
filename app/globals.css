@@ -89,7 +89,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -120,6 +120,32 @@ select {
   background-size: 12px 6px;
 }
 
+/* ===Paginate=== */
+.nextText,
+.paginateText {
+  font-weight: 700;
+}
+
+.paginateText {
+  border-right: solid 1px var(--grey1);
+  margin-left: 0.2em;
+}
+
+.selected .paginateText {
+  border-left: solid 1px var(--mainColor);
+}
+
+/* .paginateText::nth-child(1) {
+  border-left: solid 0px var(--grey1);
+} */
+
+.disabled a {
+  pointer-events: none;
+  color: grey;
+}
+/* ===Paginate=== */
+
+/* ==Buttons Start=== */
 .main-btn {
   background: var(--secColor);
   padding: 1em 1.9em;
@@ -138,6 +164,42 @@ select {
   color: var(--mainColor);
   border: solid 1px var(--mainColor);
 }
+
+.active {
+  color: #30b651;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: #c2efce;
+  margin: 1em auto;
+}
+
+.yellowBtn {
+  color: #e6bf00;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: #fffbe5;
+  margin: 1em auto;
+}
+
+.purpleBtn {
+  color: #082078;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: #e7ecfd;
+  margin: 1em auto;
+}
+
+.date {
+  color: var(--grey1);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 1em auto;
+}
+
+/* ==Buttons End=== */
 
 @layer utilities {
   .text-balance {
@@ -181,47 +243,17 @@ select {
 }
 /* ====Media Query Start ===== */
 
-#Line {
-  stroke-dasharray: 662.1567993164062;
-  stroke-dashoffset: 5;
-  animation: draw 3s ease infinite;
+#Line1 {
+  fill: none;
+  stroke: #dbd4ff;
+  stroke-width: 3px;
+  stroke-dasharray: 500;
+  /* stroke-dashoffset: 500; */
+  animation: dash 2s linear infinite;
 }
 
-@keyframes draw {
+@keyframes dash {
   to {
-    stroke-dashoffset: 662.1567993164062;
-    /* transform: scale(1.5); */
-    fill: green;
-  }
-}
-
-/* svg {
-  color: dodgerblue;
-}
-
-circle {
-
-  stroke-dasharray: 1538.7584228515625;
-  stroke-dashoffset: 0;
-  transition: stroke-dashoffset 1s ease;
-  animation: draw 3s ease infinite;
-}
-
-@keyframes draw {
-  to {
-    stroke-dashoffset: 1538.7584228515625;
-     fill: green;
-  }
-} */
-
-#myPth {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: draw 5s linear forwards;
-}
-
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
   }
 }

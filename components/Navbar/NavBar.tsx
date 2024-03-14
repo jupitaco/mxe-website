@@ -73,7 +73,7 @@ const NavBar = () => {
       },
     },
     { id: 2, title: 'Company', url: '/about-us' },
-    { id: 4, title: 'Blog', url: 'https://blog.jupitaacademy.co.uk/' },
+    { id: 4, title: 'Blog', url: '/blog' },
     { id: 5, title: 'FAQs', url: '/faqs' },
   ];
 
