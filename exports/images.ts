@@ -27,6 +27,8 @@ import ourMission from '@/public/assets/ourMission.png';
 import avatar from '@/public/assets/Avatar.png';
 import avatar1 from '@/public/assets/Avatar1.png';
 import avatar2 from '@/public/assets/Avatar2.png';
+import avatar3 from '@/public/assets/Avatar3.png';
+import avatar4 from '@/public/assets/Avatar4.png';
 import authorAvatar from '@/public/assets/authorAvatar.png';
 
 export const images = {
@@ -41,6 +43,8 @@ export const images = {
   avatar,
   avatar1,
   avatar2,
+  avatar3,
+  avatar4,
   authorAvatar,
   blog1,
   blog2,

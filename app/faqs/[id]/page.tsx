@@ -1,13 +1,14 @@
-import FaqCards from '@/components/FAQComps/FaqCards';
 import FaqHero from '@/components/FAQComps/FaqHero';
 import React from 'react';
 
-const FAQs = () => {
+const page = ({ params }: { params: { id: number | string } }) => {
   return (
     <main className='flex flex-col bg-[#F5F5F7]'>
-      <FaqHero /> <FaqCards />
+      <FaqHero />
+
+      <h1>{params.id}</h1>
     </main>
   );
 };
 
-export default FAQs;
+export default page;
