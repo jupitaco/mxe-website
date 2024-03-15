@@ -11,23 +11,23 @@ const page = () => {
   return (
     <main className={styles.company}>
       <section
-        className={`${styles.companyHero}   grid place-items-center mb-[100px] h-screen lg:h-[886px] `}
+        className={`${styles.companyHero}   grid place-items-center mb-[100px] h-[80vh] md:h-screen lg:h-[886px] `}
       >
         <article
           data-aos='fade-left'
           data-aos-duration='1500'
-          className='container flex flex-col justify-between h-[60%] '
+          className='container flex flex-col justify-between  h-[60%] '
         >
           <h1 className='w-full md:w-8/12'>
             Creating a Seamless Financial Ecosystem that Caters to{' '}
-            <b className={`${styles.Your} relative z-10`}>
+            <span className={`${styles.Your} relative z-10`}>
               {' '}
               Your
               <LineIcon
                 // data-aos='fade-in'
                 className='absolute  bottom-0 left-0 right-0 z-[-1]'
               />
-            </b>{' '}
+            </span>{' '}
             Diverse Needs.
           </h1>
 
@@ -49,7 +49,7 @@ const page = () => {
           </div>
         </article>
 
-        <ContactHeroSvg className='absolute top-10 left-0 right-0 z-[-1]' />
+        <ContactHeroSvg className='absolute top-10 left-0 right-0 z-[-1] hidden md:flex' />
       </section>
 
       <section className={`${styles.Contents} container`}>
@@ -63,7 +63,7 @@ const page = () => {
               <h4 className='inline'>OUR MISSION</h4>
             </hgroup>
 
-            <p className='my-8'>
+            <p className='my-8 '>
               At MXE, our mission is to create a seamless and user-centric
               financial ecosystem that caters to the diverse needs of our users.
               We strive to enhance financial accessibility, security, and
@@ -75,10 +75,10 @@ const page = () => {
 
         <article className='quote text-center w-full md:w-9/12 mx-auto mb-[100px]'>
           <h3 className='  mb-5'>
-            &quote;As we stand at the intersection of finance and technology,
-            the MXE story continues to unfold. Our journey is fueled by a
-            commitment to innovation, security, and the empowerment of
-            individuals in their financial endeavors.&quot;
+            &quot;As we stand at the intersection of finance and technology, the
+            MXE story continues to unfold. Our journey is fueled by a commitment
+            to innovation, security, and the empowerment of individuals in their
+            financial endeavors.&quot;
           </h3>
           <p>Michael Elvis - CEO</p>
         </article>

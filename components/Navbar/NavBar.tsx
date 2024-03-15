@@ -104,14 +104,14 @@ const NavBar = () => {
         <nav className='container flex items-center justify-between'>
           {/* Logo */}
           <section
-            className={`col-5 col-lg-2 flex flex-row items-center`}
+            className={`w-5/12 lg:w-2/12 flex flex-row items-center`}
             data-aos='zoom-out'
             data-aos-duration='1500'
           >
             <BrandLogo />
           </section>
           <section
-            className={`w-full lg:w-10/12 ${
+            className={`w-full lg:w-11/12 flex justify-end ${
               toggle['navbar'] ? styles.navOpen : styles.navClose
             }`}
           >
@@ -216,7 +216,7 @@ const NavBar = () => {
             </aside>
           </section>
           {/* Hambuger icon */}
-          <section className='col-1'>
+          <section className='w-1/12 flex lg:hidden'>
             <div
               onClick={() => handleToggle('navbar')}
               className={toggle['navbar'] ? styles.open : styles.ham}
