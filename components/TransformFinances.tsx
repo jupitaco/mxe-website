@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppStore, GooglePlay } from './SVGs/Icons';
+import { BorderedAppStore, BorderedGooglePlay } from './SVGs/Icons';
 import Image from 'next/image';
 import { images } from '@/exports/images';
 
@@ -33,9 +33,9 @@ const TransformFinances = ({
             Download the MXE app today to transform the way you manage your
             finances.
           </p>
-          <div className='flex justify-center gap-3 w-full md:w-8/12'>
-            <AppStore fill='#fff' />
-            <GooglePlay fill='#fff' />{' '}
+          <div className='flex justify-center gap-3 w-full md:w-8/12 py-2'>
+            <BorderedAppStore />
+            <BorderedGooglePlay />
           </div>
         </article>
       </section>
