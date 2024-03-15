@@ -23,10 +23,11 @@ const page = () => {
             <span className={`${styles.Your} relative z-10`}>
               {' '}
               Your
-              <LineIcon
+              <div className='absolute  bottom-0 left-0 right-0 z-[-1]'>
+                <LineIcon
                 // data-aos='fade-in'
-                className='absolute  bottom-0 left-0 right-0 z-[-1]'
-              />
+                />
+              </div>
             </span>{' '}
             Diverse Needs.
           </h1>
