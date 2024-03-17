@@ -17,7 +17,7 @@ const page = ({ params }: { params: { url: string } }) => {
         <article>
           <h3>{renderFAQList?.title}</h3>
           <div className='w-[24px] h-[25px] my-5'>{renderFAQList?.icon}</div>
-          <div className='flex gap-4 items-center'>
+          <div className='flex gap-4 items-center flex flex-wrap '>
             <div className='flex items-center'>
               {renderFAQList?.authorImages.map((item, idx) => (
                 <figure
@@ -49,17 +49,19 @@ const page = ({ params }: { params: { url: string } }) => {
           </div>
         </article>
 
-        <article className='flex flex-col'>
+        <ul className='flex flex-col mt-5'>
           {renderFAQList?.questions.map(({ qid, qtitle }) => (
-            <Link
-              key={qid}
-              href={`/faqs/${renderFAQList?.url}/${qid}`}
-              className='hover:transform-none'
-            >
-              {qtitle}
-            </Link>
+            <li key={qid} className='py-2 my-2 border-b-2 '>
+              <Link
+                href={`/faqs/${renderFAQList?.url}/${qid}`}
+                className='hover:transform-none flex justify-between items-center gap-2'
+              >
+                {qtitle}
+                <FaChevronRight color='#0828B1' />
+              </Link>
+            </li>
           ))}
-        </article>
+        </ul>
       </section>
     </main>
   );
