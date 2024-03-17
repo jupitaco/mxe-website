@@ -1,18 +1,12 @@
-import { StaticImageData } from 'next/image';
+import { ReactNode } from 'react';
 
-export interface ICaseStudy {
+export interface IAccordion {
+  action: () => void;
+  toggle: { [key: number]: boolean };
   id: number;
+  question: string;
   title: string;
-  imageUrl: string | StaticImageData;
-  url: string;
-}
-
-export interface IReview {
-  id: number | string | undefined;
-  title: string;
-  quote: string;
-  imageUrl: string | StaticImageData;
-  name: string;
-  role: string;
-  stars: boolean;
+  subTitle: string;
+  desc: ReactNode;
+  subDesc: string;
 }

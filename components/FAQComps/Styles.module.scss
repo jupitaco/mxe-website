@@ -7,7 +7,7 @@
 
   .searchContainer {
     border-radius: 50px;
-    padding: 0 0.5em;
+    padding: 0 1em;
     background: var(--white);
 
     .searchInp {
@@ -27,27 +27,27 @@
     background: var(--white);
     box-shadow: 0px 1px 8px 0px #14141414;
     box-shadow: 0px 0px 1px 0px #1414141f;
+  }
 
-    .lilOverlap {
-      margin-left: -0.7em;
+  .lilOverlap {
+    margin-left: -0.7em;
 
-      &:first-child {
-        // margin-left: 0;
-        margin-left: 0;
-      }
+    &:first-child {
+      // margin-left: 0;
+      margin-left: 0;
     }
+  }
 
-    .overlapMore {
-      margin-left: -1em;
+  .overlapMore {
+    margin-left: -1em;
 
-      &:first-child {
-        // margin-left: 0;
-        margin-left: 0;
-      }
+    &:first-child {
+      // margin-left: 0;
+      margin-left: 0;
     }
+  }
 
-    small {
-      color: var(--grey1);
-    }
+  small {
+    color: var(--grey1);
   }
 }
