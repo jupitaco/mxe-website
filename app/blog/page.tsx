@@ -10,7 +10,7 @@ import Pagination from '@/components/Pagination';
 
 const Blog = () => {
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 3;
+  const itemsPerPage = 7;
   const endOffset = itemOffset + itemsPerPage;
 
   // Remove the feaured blog from the data
@@ -36,10 +36,10 @@ const Blog = () => {
             <button className='active' type='button'>
               Active
             </button>
-            <h1>
+            <h3>
               Maximizing Your Savings: A Guide to MXE&apos;s &apos;Save in
               USD&apos; Feature
-            </h1>
+            </h3>
 
             <div className='date'>
               <small>February 24, 2024</small>
@@ -51,7 +51,7 @@ const Blog = () => {
         </Link>
         <section className='flex flex-col my-10'>
           <section
-            className={`${styles.blogCardContainer}  flex flex-col gap-5 md:gap-3 lg:gap-10 justify-center`}
+            className={`${styles.blogCardContainer}  flex flex-col gap-5 md:gap-3 lg:gap-2 justify-center`}
           >
             {currentData.map(
               ({

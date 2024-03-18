@@ -123,7 +123,7 @@ const NavBar = () => {
                 data-aos-duration='1500'
                 className={` ${styles.navItems} flex flex-col lg:flex-row  w-full justify-between items-center !mt-[100px] lg:!mt-0`}
               >
-                <ul className='flex flex-col lg:flex-row w-full lg:w-9/12  justify-end text-center gap-4'>
+                <ul className='flex flex-col lg:flex-row w-full lg:w-9/12  justify-end  gap-4'>
                   {linkList.map(({ id, title, url, dropdown }) => (
                     <div key={id}>
                       {dropdown ? (
@@ -131,7 +131,7 @@ const NavBar = () => {
                           <span
                             style={{ fontWeight: '700' }}
                             onClick={() => setToggleDropdown(!toggleDropdown)}
-                            className='flex items-center gap-1 justify-center'
+                            className='flex items-center gap-1 '
                           >
                             Products
                             <IoChevronDown
@@ -144,12 +144,10 @@ const NavBar = () => {
                           </span>
                           {toggleDropdown && (
                             <div
-                              className={`${styles.drop} flex flex-col lg:flex-row justify-center lg:justify-between gap-3`}
+                              className={`${styles.drop} flex flex-col lg:flex-row justify-center lg:justify-between gap-3  `}
                               ref={modalRef}
                             >
-                              <ul
-                                className={`  flex flex-col items-center lg:items-start text-center lg:text-start`}
-                              >
+                              <ul className={`  flex flex-col text-start`}>
                                 <h6>Payments</h6>
                                 {dropdown.payment.map(
                                   ({ id, title, icon, subtitle }) => (
@@ -163,9 +161,7 @@ const NavBar = () => {
                                   ),
                                 )}
                               </ul>
-                              <ul
-                                className={`  flex flex-col items-center lg:items-start text-center lg:text-start`}
-                              >
+                              <ul className={`  flex flex-col text-start`}>
                                 <h6>Features</h6>
                                 {dropdown.features.map(
                                   ({ id, title, icon, subtitle }) => (
@@ -202,12 +198,12 @@ const NavBar = () => {
                     </div>
                   ))}
                 </ul>
-                <div className='flex justify-end  mt-8 lg:mt-0'>
+                <div className='flex justify-start lg:justify-end  mt-8 lg:mt-0 w-full lg:w-2/12'>
                   <a
                     href='https://wa.me/message/DMUFZ4VU2SNCF1'
                     target='_blank'
                     rel='noreferrer'
-                    className={`main-btn text-center`}
+                    className={`main-btn text-center w-full`}
                   >
                     Download
                   </a>

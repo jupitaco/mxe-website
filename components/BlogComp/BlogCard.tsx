@@ -25,12 +25,12 @@ const BlogCard: React.FC<IBlogCard> = ({
     <Link
       href={`${id}`}
       key={id}
-      className={`${styles.blogCard} flex flex-col md:flex-row justify-around md:justify-between hover:transform-none items-center`}
+      className={`${styles.blogCard} flex flex-col md:flex-row gap-3 md:justify-center hover:transform-none items-center`}
     >
       <figure className='w-full md:w-4/12'>
         <Image src={imageUrl} alt='' />
       </figure>
-      <section className='w-full md:w-8/12 p-5 '>
+      <section className='w-full md:w-7/12 p-5 '>
         <button
           className={
             status === 'User Stories'

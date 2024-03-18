@@ -1,3 +1,4 @@
+// import Breadcrumbs from '@/components/Breadcrumbs';
 import { faqData } from '@/components/FAQComps/FAQData';
 import FaqHero from '@/components/FAQComps/FaqHero';
 import styles from '@/components/FAQComps/Styles.module.scss';
@@ -10,10 +11,10 @@ const page = ({ params }: { params: { url: string } }) => {
   return (
     <main className='flex flex-col bg-[#F5F5F7] '>
       <FaqHero />
-
       <section
         className={`${styles.cardWrapper} w-11/12 md:w-9/12 mx-auto my-[100px] border rounded-[21px] py-[24px] px-[20px] md:px-[40px] `}
       >
+        {/* <Breadcrumbs /> */}
         <article>
           <h3>{renderFAQList?.title}</h3>
           <div className='w-[24px] h-[25px] my-5'>{renderFAQList?.icon}</div>

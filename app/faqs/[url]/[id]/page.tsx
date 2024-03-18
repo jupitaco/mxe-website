@@ -4,6 +4,7 @@ import styles from './ReadMore.module.scss';
 import { faqData } from '@/components/FAQComps/FAQData';
 import { images } from '@/exports/images';
 import FaqHero from '@/components/FAQComps/FaqHero';
+// import Breadcrumbs from '@/components/Breadcrumbs';
 
 const ReadMore = ({ params }: { params: { id: string } }) => {
   const articleToRead = faqData
@@ -15,6 +16,7 @@ const ReadMore = ({ params }: { params: { id: string } }) => {
       <FaqHero />
 
       <section className=' mt-[100px] flex flex-col justify-between  w-11/12 lg:w-8/12 mx-auto'>
+        {/* <Breadcrumbs /> */}
         <h3 className='text-center my-7'> {articleToRead?.qtitle} </h3>
 
         <figure className='flex gap-3 items-center '>
