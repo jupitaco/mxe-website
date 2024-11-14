@@ -44,9 +44,19 @@ import confirming from '@/public/assets/confirming.png';
 import conversion from '@/public/assets/conversion.png';
 import rates from '@/public/assets/rates.png';
 import fiat from '@/public/assets/fiat.png';
+import vcard from '@/public/assets/vcard.png';
+import instant from '@/public/assets/instant.png';
+import global from '@/public/assets/global.png';
+import control from '@/public/assets/control.png';
+import fundcard from '@/public/assets/fundcard.png';
 
 export const images = {
   sendPhone,
+  fundcard,
+  instant,
+  global,
+  control,
+  vcard,
   conversion,
   rates,
   fiat,
