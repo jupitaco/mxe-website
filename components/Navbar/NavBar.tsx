@@ -97,7 +97,7 @@ const NavBar = () => {
   }, [toggleDropdown]);
 
   return (
-    <header>
+    <header className='border-b'>
       <section
         className={`${styles.navContainer} flex items-center justify-between`}
       >
@@ -129,7 +129,6 @@ const NavBar = () => {
                       {dropdown ? (
                         <li key={id}>
                           <span
-                            style={{ fontWeight: '700' }}
                             onClick={() => setToggleDropdown(!toggleDropdown)}
                             className='flex items-center gap-1 '
                           >
@@ -148,7 +147,7 @@ const NavBar = () => {
                               ref={modalRef}
                             >
                               <ul className={`  flex flex-col text-start`}>
-                                <h6>Payments</h6>
+                                <h6 className='font-normal'>Payments</h6>
                                 {dropdown.payment.map(
                                   ({ id, title, icon, subtitle }) => (
                                     <li key={id} className='flex my-3'>
@@ -162,7 +161,7 @@ const NavBar = () => {
                                 )}
                               </ul>
                               <ul className={`  flex flex-col text-start`}>
-                                <h6>Features</h6>
+                                <h6 className='font-normal'>Features</h6>
                                 {dropdown.features.map(
                                   ({ id, title, icon, subtitle }) => (
                                     <li key={id} className='flex my-3'>

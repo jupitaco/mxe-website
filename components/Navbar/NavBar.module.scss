@@ -23,7 +23,7 @@
 
       a {
         color: var(--secColor);
-        font-weight: 700;
+        // font-weight: 700;
       }
     }
 
@@ -33,8 +33,9 @@
       transition: all 0.3s ease-in-out;
 
       a {
-        color: var(--black);
-        font-weight: 700;
+        color: #2e2e27;
+
+        // font-weight: 700;
       }
     }
 
@@ -69,7 +70,7 @@
 
       h6 {
         font-size: 1.1rem;
-        font-weight: 700;
+        color: #2e2e27;
       }
 
       p {
@@ -78,7 +79,7 @@
       }
       small {
         font-weight: 400;
-        color: var(--grey1);
+        color: #2e2e27;
       }
     }
 

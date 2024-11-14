@@ -1,23 +1,42 @@
 import React from 'react';
-import styles from '../Styles.module.scss';
+
 import Image from 'next/image';
 import { images } from '@/exports/images';
 import { AppStore, GooglePlay } from '../../SVGs/Icons';
-import HeroImages from './HeroImages';
-import HeroTextTypeWriter from './HeroTextTypeWriter';
+
 const Hero = () => {
   return (
-    <section className={`${styles.hero} min-h-screen py-10`}>
-      <section className='container flex flex-col justify-between'>
-        <HeroTextTypeWriter styles={styles} />
-        <div className='h-[70vh] md:h-[90vh] '>
-          <HeroImages />
-        </div>
+    <section className={` py-5`}>
+      <section className='container grid grid-cols-1 lg:grid-cols-2 gap-4'>
+        <article
+          className='bg-white rounded-lg p-7 flex flex-col justify-center gap-4 text-center lg:text-start'
+          data-aos='fade-right'
+          data-aos-duration='1000'
+        >
+          <h1 className=''>One App, Endless Financial Possibilities</h1>
+          <p className='text-base lg:text-xl text-grayish-400'>
+            Whether you&apos;re a seasoned crypto user or new to digital
+            finance, we&apos;re here to make your financial journey smarter,
+            faster, and more rewarding. Experience a new way to manage, save,
+            and grow your wealth—all in one place.
+          </p>
+          <div className='flex justify-center gap-3 items-center mt-10 w-full lg:w-7/12'>
+            <AppStore />
+            <GooglePlay />{' '}
+          </div>
+        </article>
 
-        <div className='flex justify-center gap-3 items-center mt-10 w-9/12 mx-auto'>
-          <AppStore fill='#0828B1' />
-          <GooglePlay fill='#0828B1' />{' '}
-        </div>
+        <figure
+          data-aos='zoom-in-right'
+          data-aos-duration='1000'
+          className='overflow-hidden rounded-lg'
+        >
+          <Image
+            src={images.homehero}
+            alt=''
+            className='!h-full object-cover'
+          />
+        </figure>
       </section>
     </section>
   );
