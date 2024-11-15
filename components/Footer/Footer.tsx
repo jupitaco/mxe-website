@@ -1,8 +1,9 @@
 import styles from './footer.module.scss';
 import Link from 'next/link';
 import BrandLogo from '../BrandLogo';
-import { FaDribbble, FaTwitter } from 'react-icons/fa';
+import { FaDribbble, FaFacebook, FaTwitter } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa6';
+import { aboutRoutes, featuresRoutes, legalRoutes } from './routes';
 
 const Footer = () => {
   return (
@@ -31,40 +32,55 @@ const Footer = () => {
               data-aos='fade-left'
               className={`${styles.footerW} `}
             >
-              <h4>Resources</h4>
-              <li>
-                <Link href='/blog'>Blog</Link>
-              </li>
-              <li>
-                <Link href='/faq'>FAQ</Link>
-              </li>
+              <h4>Features</h4>
+              {featuresRoutes.map(({ name, path }) => (
+                <li key={name} data-aos='fade-left'>
+                  <Link href={path} className='text-base'>
+                    {' '}
+                    {name}
+                  </Link>
+                </li>
+              ))}
             </ul>
             <ul
               data-aos-duration='1500'
               data-aos='fade-left'
               className={`${styles.footerW} `}
             >
-              <h4>Company</h4>
+              <h4>Legal</h4>
 
-              <li>
-                <Link href='/about-us'>About us</Link>
-              </li>
-              <li>
-                <Link href='#'>Privacy Policy</Link>
-              </li>
-              <li>
-                <Link href='#'>Terms of Use</Link>
-              </li>
-              <li>
-                <Link href='#'>Contact</Link>
-              </li>
+              {legalRoutes.map(({ name, path }) => (
+                <li key={name} data-aos='fade-left'>
+                  <Link href={path} className='text-base'>
+                    {' '}
+                    {name}
+                  </Link>
+                </li>
+              ))}
             </ul>
             <ul
               data-aos-duration='1500'
               data-aos='fade-left'
               className={`${styles.footerW} `}
             >
-              <h4 className='flex justify-start md:justify-end gap-2 items-center '>
+              <h4>About</h4>
+
+              {aboutRoutes.map(({ name, path }) => (
+                <li key={name} data-aos='fade-left'>
+                  <Link href={path} className='text-base'>
+                    {' '}
+                    {name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <ul
+              data-aos-duration='1500'
+              data-aos='fade-left'
+              className={`${styles.footerW} `}
+            >
+              <h4 className='font-normal'>Contact</h4>
+              {/* <h4 className='flex justify-start md:justify-end gap-2 items-center '>
                 <FaTwitter /> <FaDribbble /> <FaLinkedinIn />
               </h4>
               <li className='text-start md:text-end '>
@@ -72,13 +88,13 @@ const Footer = () => {
                   Ventura Road,
                   <br /> Lekki Lagos, Nigeria
                 </address>
-              </li>
+              </li> */}
               <li className='text-start md:text-end'>
-                <a href='mailto: contact@mymxe.com'>contact@mymxe.com</a>
+                <a href='mailto: support@mxelabs.com'>support@mxelabs.com</a>
               </li>
-              <li className='text-start md:text-end'>
+              {/* <li className='text-start md:text-end'>
                 <a href='tel: +234 812 345 6890'>+234 812 345 6890</a>
-              </li>
+              </li> */}
             </ul>
           </section>
         </main>
@@ -87,6 +103,11 @@ const Footer = () => {
         <section className={`container flex justify-between`}>
           <div className=''>
             <p>MXE labs © 2024</p>
+          </div>
+          <div>
+            <h4 className='flex justify-start md:justify-end gap-2 items-center '>
+              <FaLinkedinIn /> <FaTwitter /> <FaFacebook />
+            </h4>
           </div>
         </section>
       </footer>

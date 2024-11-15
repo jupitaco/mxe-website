@@ -1,12 +1,38 @@
 import type { Metadata } from 'next';
-import { Plus_Jakarta_Sans } from 'next/font/google';
 import AOSAnimation from '@/utils/AosInit';
 import Footer from '@/components/Footer/Footer';
 import NavBar from '@/components/Navbar/NavBar';
+import localFont from 'next/font/local';
 
-const jakarta = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  variable: '--font-jakarta',
+// const jakarta = Plus_Jakarta_Sans({
+//   subsets: ['latin'],
+//   variable: '--font-jakarta',
+//   display: 'swap',
+// });
+
+const aeoniksFonts = localFont({
+  src: [
+    {
+      path: './fonts/Aeonik-Light.otf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Aeonik-Regular.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Aeonik-Medium.otf',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Aeonik-Bold.otf',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
   display: 'swap',
 });
 
@@ -23,7 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={jakarta.variable}>
+      <body className={aeoniksFonts.className}>
         <NavBar />
         <AOSAnimation>{children}</AOSAnimation>
         <Footer />

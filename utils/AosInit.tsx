@@ -1,7 +1,10 @@
 'use client';
 import { ReactNode, useEffect } from 'react';
-import 'aos/dist/aos.css';
 import '../app/globals.css';
+import 'aos/dist/aos.css';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export default function AOSAnimation({ children }: { children: ReactNode }) {
   // AOS animation

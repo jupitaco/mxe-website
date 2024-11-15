@@ -14,6 +14,14 @@
     #ca73ff 50.34%,
     #ff739d 100%
   );
+
+  --Grey2: #707070;
+  --Grey3: #bdc0ce;
+  --Grey4: #f3f4f8;
+  --Grey5: #bcbcbd;
+  --Grey6: #7e8494;
+  --Line: #ced4da;
+  --rated: #ebc351;
 }
 
 .container {
@@ -21,7 +29,7 @@
 }
 
 html {
-  font-family: var(--font-jakarta), sans-serif;
+  font-family: 'Aeonik', sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -29,8 +37,9 @@ html {
 body {
   color: var(--black);
   background: var(--white);
-  font-family: var(--font-jakarta), sans-serif;
+  font-family: 'Aeonik', sans-serif;
   line-height: 24px;
+  font-weight: 400;
 }
 
 img {
@@ -60,6 +69,7 @@ p {
   margin: 0;
   padding: 0;
   line-height: 1.2;
+  font-weight: 400;
 }
 
 ul,
@@ -84,23 +94,19 @@ a:hover {
 
 h1,
 h2 {
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 4.4rem;
 }
 
 h3 {
   font-size: 2.5rem;
-  font-weight: 700;
 }
 
 h4 {
   font-size: 1.1rem;
-  font-weight: 600;
 }
 
 p {
   font-size: 1.1rem;
-  font-weight: 300;
 }
 
 select {
@@ -151,7 +157,7 @@ select {
   padding: 1em 1.9em;
   font-size: 1rem;
   font-weight: 500;
-  border-radius: 8px;
+  border-radius: 38px;
   color: var(--white);
 }
 
@@ -217,9 +223,28 @@ select {
   transition: all 1s ease-in-out;
 }
 
+.rated {
+  color: var(--rated);
+  cursor: pointer;
+}
+
+.noRating {
+  color: var(--Grey6);
+  cursor: pointer;
+}
+
+.noRating:hover {
+  color: var(--rated);
+}
+
 .quote h3 {
   font-size: 40px;
   color: #8e8e8a;
+}
+
+.ready {
+  background: #1053f3 url('../public/assets/line-9.png') top left no-repeat;
+  background-size: cover;
 }
 
 /* ====Media Query Start ===== */

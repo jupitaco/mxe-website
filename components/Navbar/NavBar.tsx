@@ -72,9 +72,13 @@ const NavBar = () => {
         ],
       },
     },
-    { id: 2, title: 'Company', url: '/about-us' },
-    { id: 4, title: 'Blog', url: '/blog' },
-    { id: 5, title: 'FAQs', url: '/faqs' },
+    { id: 2, title: 'We’re Hiring', url: '#' },
+    { id: 4, title: 'Resources', url: '#' },
+    { id: 5, title: 'Company', url: '#' },
+    { id: 5, title: 'API', url: '#' },
+    // { id: 2, title: 'Company', url: '/about-us' },
+    // { id: 4, title: 'Blog', url: '/blog' },
+    // { id: 5, title: 'FAQs', url: '/faqs' },
   ];
 
   // close the modal when click anywhere on the screen
@@ -97,7 +101,7 @@ const NavBar = () => {
   }, [toggleDropdown]);
 
   return (
-    <header>
+    <header className='border-b'>
       <section
         className={`${styles.navContainer} flex items-center justify-between`}
       >
@@ -123,17 +127,16 @@ const NavBar = () => {
                 data-aos-duration='1500'
                 className={` ${styles.navItems} flex flex-col lg:flex-row  w-full justify-between items-center !mt-[100px] lg:!mt-0`}
               >
-                <ul className='flex flex-col lg:flex-row w-full lg:w-9/12  justify-end  gap-4'>
+                <ul className='flex flex-col lg:flex-row w-full lg:w-9/12  justify-center  gap-4'>
                   {linkList.map(({ id, title, url, dropdown }) => (
                     <div key={id}>
                       {dropdown ? (
                         <li key={id}>
                           <span
-                            style={{ fontWeight: '700' }}
                             onClick={() => setToggleDropdown(!toggleDropdown)}
                             className='flex items-center gap-1 '
                           >
-                            Products
+                            Features
                             <IoChevronDown
                               className={
                                 toggleDropdown
@@ -148,7 +151,7 @@ const NavBar = () => {
                               ref={modalRef}
                             >
                               <ul className={`  flex flex-col text-start`}>
-                                <h6>Payments</h6>
+                                <h6 className='font-normal'>Payments</h6>
                                 {dropdown.payment.map(
                                   ({ id, title, icon, subtitle }) => (
                                     <li key={id} className='flex my-3'>
@@ -162,7 +165,7 @@ const NavBar = () => {
                                 )}
                               </ul>
                               <ul className={`  flex flex-col text-start`}>
-                                <h6>Features</h6>
+                                <h6 className='font-normal'>Features</h6>
                                 {dropdown.features.map(
                                   ({ id, title, icon, subtitle }) => (
                                     <li key={id} className='flex my-3'>

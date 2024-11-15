@@ -29,10 +29,51 @@ import avatar1 from '@/public/assets/Avatar1.png';
 import avatar2 from '@/public/assets/Avatar2.png';
 import avatar3 from '@/public/assets/Avatar3.png';
 import avatar4 from '@/public/assets/Avatar4.png';
+import avatar5 from '@/public/assets/Avatar5.png';
+import avatar6 from '@/public/assets/Avatar6.png';
+import avatar7 from '@/public/assets/Avatar7.png';
 import authorAvatar from '@/public/assets/authorAvatar.png';
+import homehero from '@/public/assets/homehero.png';
+import instantmock1 from '@/public/assets/instantmock1.png';
+import mockmobile from '@/public/assets/mockmobile.png';
+import spend from '@/public/assets/spend.png';
+import paybills from '@/public/assets/paybills.png';
+import accountdeets from '@/public/assets/accountdeets.png';
+import readymock from '@/public/assets/readymock.png';
+import confirming from '@/public/assets/confirming.png';
+import conversion from '@/public/assets/conversion.png';
+import rates from '@/public/assets/rates.png';
+import fiat from '@/public/assets/fiat.png';
+import vcard from '@/public/assets/vcard.png';
+import instant from '@/public/assets/instant.png';
+import global from '@/public/assets/global.png';
+import control from '@/public/assets/control.png';
+import fundcard from '@/public/assets/fundcard.png';
+import vaccount from '@/public/assets/vaccount.png';
+import sendandreq from '@/public/assets/sendandreq.png';
+import referloan from '@/public/assets/referloan.png';
 
 export const images = {
   sendPhone,
+  vaccount,
+  sendandreq,
+  referloan,
+  fundcard,
+  instant,
+  global,
+  control,
+  vcard,
+  conversion,
+  rates,
+  fiat,
+  confirming,
+  readymock,
+  accountdeets,
+  spend,
+  paybills,
+  mockmobile,
+  instantmock1,
+  homehero,
   savingPhone,
   convertPhone,
   heroPhone1,
@@ -45,6 +86,9 @@ export const images = {
   avatar2,
   avatar3,
   avatar4,
+  avatar5,
+  avatar6,
+  avatar7,
   authorAvatar,
   blog1,
   blog2,
