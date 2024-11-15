@@ -46,6 +46,7 @@ const NavBar = () => {
             title: 'MXE Virtual Card',
             subtitle: 'Seamless online shopping',
             icon: <VirtualCard />,
+            url: '/virtual-card',
           },
         ],
 
@@ -127,24 +128,37 @@ const NavBar = () => {
                 data-aos-duration='1500'
                 className={` ${styles.navItems} flex flex-col lg:flex-row  w-full justify-between items-center !mt-[100px] lg:!mt-0`}
               >
-                <ul className='flex flex-col lg:flex-row w-full lg:w-9/12  justify-center  gap-4'>
+                <ul className='flex flex-col lg:flex-row w-full lg:w-9/12  justify-center items-center gap-4'>
                   {linkList.map(({ id, title, url, dropdown }) => (
                     <div key={id}>
                       {dropdown ? (
-                        <li key={id}>
-                          <span
-                            onClick={() => setToggleDropdown(!toggleDropdown)}
-                            className='flex items-center gap-1 '
-                          >
-                            Features
-                            <IoChevronDown
-                              className={
-                                toggleDropdown
-                                  ? 'rotate-180 transition-all'
-                                  : ''
-                              }
-                            />
-                          </span>
+                        <li
+                          key={id}
+                          className={
+                            currentRoute === '/features'
+                              ? styles.isActive
+                              : styles.notActive
+                          }
+                        >
+                          <div className='flex items-center gap-1 '>
+                            <Link
+                              onClick={() => handleToggle('navbar')}
+                              href='/features'
+                            >
+                              Features
+                            </Link>
+                            <span
+                              onClick={() => setToggleDropdown(!toggleDropdown)}
+                            >
+                              <IoChevronDown
+                                className={
+                                  toggleDropdown
+                                    ? 'rotate-180 transition-all'
+                                    : ''
+                                }
+                              />
+                            </span>
+                          </div>
                           {toggleDropdown && (
                             <div
                               className={`${styles.drop} flex flex-col lg:flex-row justify-center lg:justify-between gap-3  `}
@@ -153,14 +167,18 @@ const NavBar = () => {
                               <ul className={`  flex flex-col text-start`}>
                                 <h6 className='font-normal'>Payments</h6>
                                 {dropdown.payment.map(
-                                  ({ id, title, icon, subtitle }) => (
-                                    <li key={id} className='flex my-3'>
+                                  ({ id, title, icon, subtitle, url }) => (
+                                    <Link
+                                      href={url ? url : '#'}
+                                      key={id}
+                                      className='flex my-3 text-black'
+                                    >
                                       {icon}
                                       <div>
                                         <p>{title} </p>
                                         <small> {subtitle} </small>
                                       </div>
-                                    </li>
+                                    </Link>
                                   ),
                                 )}
                               </ul>
@@ -201,7 +219,7 @@ const NavBar = () => {
                     </div>
                   ))}
                 </ul>
-                <div className='flex justify-start lg:justify-end  mt-8 lg:mt-0 w-full lg:w-2/12'>
+                <div className='flex justify-start lg:justify-end  mt-8 lg:mt-0 w-11/12 lg:w-2/12'>
                   <a
                     href='https://wa.me/message/DMUFZ4VU2SNCF1'
                     target='_blank'
