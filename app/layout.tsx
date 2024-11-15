@@ -3,6 +3,7 @@ import AOSAnimation from '@/utils/AosInit';
 import Footer from '@/components/Footer/Footer';
 import NavBar from '@/components/Navbar/NavBar';
 import localFont from 'next/font/local';
+import { Toaster } from 'react-hot-toast';
 
 // const jakarta = Plus_Jakarta_Sans({
 //   subsets: ['latin'],
@@ -50,6 +51,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={aeoniksFonts.className}>
+        <Toaster position='top-center' />
         <NavBar />
         <AOSAnimation>{children}</AOSAnimation>
         <Footer />

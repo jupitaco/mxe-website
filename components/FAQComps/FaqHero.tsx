@@ -18,7 +18,7 @@ const FaqHero = () => {
           placeholder='How can I receive payments?'
           className={`${styles.searchInp} grow`}
         />{' '}
-        <IoMicOutline />
+        {/* <IoMicOutline /> */}
       </div>
     </section>
   );

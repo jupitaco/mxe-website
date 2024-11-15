@@ -2,7 +2,6 @@ import Hero from '@/components/HomeComps/Hero/Hero';
 import { images } from '@/exports/images';
 import Image from 'next/image';
 import styles from '../components/HomeComps/Styles.module.scss';
-import TransformFinances from '@/components/TransformFinances';
 import FeaturedBrands from '@/components/FeaturedBrands';
 import { PhoneIcon, TimeIcon, WhatsappIcon } from '@/components/SVGs/Icons';
 import { HomeReviewsSlider } from '@/components/HomeReviewsSlider';
@@ -91,7 +90,9 @@ export default function Home() {
             data-aos='fade-right'
             data-aos-duration='1000'
           >
-            <h3>Spend globally</h3>
+            <h3 className='text-2xl lg:text-5xl mt-0 lg:mt-10'>
+              Spend globally
+            </h3>
             <div className='flex flex-col gap-10'>
               <p className='text-base lg:text-xl text-grayish-400'>
                 Instantly create a virtual card that allows you to shop online,
@@ -107,7 +108,7 @@ export default function Home() {
           </article>
           <div className='w-full lg:w-7/12  lg:p-0 p-3 overflow-hidden lg:bg-transparent bg-white rounded-b-lg'>
             <figure
-              className=' overflow-hidden h-[375px] lg:h-full rounded-lg'
+              className=' overflow-hidden h-[375px] lg:h-[550px] rounded-lg'
               data-aos='fade-up'
             >
               <Image
@@ -115,7 +116,7 @@ export default function Home() {
                 alt=''
                 data-aos='fade-up'
                 data-aos-delay='300'
-                className='!h-full  object-cover'
+                className='!h-full  object-cover object-bottom'
               />
             </figure>
           </div>
@@ -129,7 +130,9 @@ export default function Home() {
             data-aos='fade-right'
             data-aos-duration='1000'
           >
-            <h3>Pay bills effortlessly </h3>
+            <h3 className='text-2xl lg:text-5xl mt-0 lg:mt-10'>
+              Pay bills effortlessly{' '}
+            </h3>
             <div className='flex flex-col gap-10'>
               <p className='text-base lg:text-xl text-grayish-400'>
                 Pay your utility bills, subscriptions, and more right from the

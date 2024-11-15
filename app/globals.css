@@ -205,6 +205,10 @@ select {
   margin: 1em auto;
 }
 
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 /* ==Buttons End=== */
 
 @layer utilities {
@@ -249,6 +253,31 @@ select {
 .custom {
   background: url('../public/assets/customizebg.png') top left no-repeat;
   background-size: cover;
+}
+
+label {
+  font-size: 14px;
+  color: #36394a;
+  margin-bottom: -0.2em;
+}
+
+textarea::placeholder,
+input::placeholder {
+  font-weight: 300;
+}
+
+.form-controls {
+  display: block;
+  width: 100%;
+  padding: 0.77em 1em;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid var(--Line);
+  border-radius: 10px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 /* ====Media Query Start ===== */
