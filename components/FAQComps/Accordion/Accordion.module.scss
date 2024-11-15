@@ -1,12 +1,14 @@
 .accordion {
   padding: 0.8em 1.2em;
-  border-radius: 4px;
-  background: #f9f9fa;
+  border-radius: 12px;
+  background: #fff;
   width: 100%;
+  border: solid 1px #eceff3;
 
   .answer {
     padding: 1em 0;
     margin: 0.3em auto;
+    color: #666d80;
     li {
       list-style-type: disc;
       // font-size: 0.9rem;

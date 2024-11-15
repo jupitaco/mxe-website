@@ -9,6 +9,7 @@ import { HomeReviewsSlider } from '@/components/HomeReviewsSlider';
 import Ready from '@/components/Ready';
 import BeyoundBanking from '@/components/BeyoundBanking';
 import { beyoundBankingTtitle, reviewDatas } from '@/utils/constant';
+import AnimatedMockup from '@/components/AnimatedMockup';
 
 export default function Home() {
   return (
@@ -206,6 +207,14 @@ export default function Home() {
 
           <BeyoundBanking data={beyoundBankingTtitle} />
         </section>
+      </section>
+
+      <section className='mt-10 py-20 bg-white'>
+        <article className='space-y-4 mb-10'>
+          <h3>Customize your financial experience</h3>
+        </article>
+
+        <AnimatedMockup />
       </section>
 
       <section className='flex h-[617px] flex-col justify-around bg-[#EFF9F9] py-10'>
