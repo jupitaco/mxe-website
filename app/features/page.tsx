@@ -5,6 +5,7 @@ import btclogos from '@/public/assets/logosssss.png';
 import Ready from '@/components/Ready';
 import Link from 'next/link';
 import { FaArrowRightLong } from 'react-icons/fa6';
+import AnimatedBorder from '@/components/AnimatedBorder';
 
 export default function page() {
   return (
@@ -92,7 +93,7 @@ export default function page() {
       </section>
 
       <section className='container   my-10'>
-        <div className='max-w-[700px] w-full space-y-4'>
+        <div className='max-w-[700px] w-full space-y-4 mb-10'>
           <small className='text-[#0828B1]'>Features</small>
           <h3 className='text-xl lg:text-4xl'>
             Why Choose MXE&apos;s DeFi to Fiat Feature?
@@ -104,61 +105,7 @@ export default function page() {
           </p>
         </div>
         <section className='  grid grid-cols-1 lg:grid-cols-2 gap-3 mt-5'>
-          <article
-            className='flex flex-col justify-between'
-            data-aos='fade-up'
-            data-aos-duration='1000'
-          >
-            <div className='border-l-[2px] border-[#0A69FA] p-6'>
-              <div className='space-y-5'>
-                <h4 className='text-xl font-medium'>
-                  Seamless Integration with Your Fiat Wallet
-                </h4>
-                <p className='text-grayish-400'>
-                  Once your DeFi assets are converted to fiat, they are
-                  instantly deposited into your MXE wallet. From there, you can
-                  manage your funds, send payments, or withdraw to your bank
-                  account.
-                </p>
-
-                <button className='flex gap-3 text-pryColor-200 items-center'>
-                  Learn more <FaArrowRightLong />{' '}
-                </button>
-              </div>
-            </div>
-            <div className='border-l-[2px] border-[#F2F4F7] p-6'>
-              <div className='space-y-5'>
-                <h4 className='text-xl font-medium'>
-                  Multi-Currency Support for Flexibility
-                </h4>
-                <p className='text-grayish-400'>
-                  MXE&apos;s DeFi to Fiat feature supports a wide variety of
-                  cryptocurrencies and fiat currencies, allowing you to convert
-                  assets across different markets. Whether you&apos;re dealing
-                  with popular tokens like USDC, ETH, or stablecoins.
-                </p>
-
-                <button className='flex gap-3 text-pryColor-200 items-center'>
-                  Learn more <FaArrowRightLong />{' '}
-                </button>
-              </div>
-            </div>
-            <div className='border-l-[2px] border-[#F2F4F7] p-6'>
-              <div className='space-y-5'>
-                <h4 className='text-xl font-medium'>No Hidden Fees</h4>
-                <p className='text-grayish-400'>
-                  Transparency is key. With MXE, there are no hidden fees or
-                  unexpected charges. Every transaction is clear and
-                  straightforward, so you know exactly what you&apos;re paying
-                  for.
-                </p>
-
-                <button className='flex gap-3 text-pryColor-200 items-center'>
-                  Learn more <FaArrowRightLong />{' '}
-                </button>
-              </div>
-            </div>
-          </article>
+          <AnimatedBorder />
           <article
             className='px-5 pt-5 bg-grayish-300 rounded-[10px] flex flex-col justify-end gap-5 overflow-hidden'
             data-aos='fade-up'

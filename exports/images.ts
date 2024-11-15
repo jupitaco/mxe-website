@@ -49,9 +49,15 @@ import instant from '@/public/assets/instant.png';
 import global from '@/public/assets/global.png';
 import control from '@/public/assets/control.png';
 import fundcard from '@/public/assets/fundcard.png';
+import vaccount from '@/public/assets/vaccount.png';
+import sendandreq from '@/public/assets/sendandreq.png';
+import referloan from '@/public/assets/referloan.png';
 
 export const images = {
   sendPhone,
+  vaccount,
+  sendandreq,
+  referloan,
   fundcard,
   instant,
   global,

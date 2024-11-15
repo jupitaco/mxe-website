@@ -8,13 +8,13 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <main className='py-10 bg-[#F6F8FA]'>
+    <main className='pt-10 bg-[#F6F8FA]'>
       <hgroup
-        className='py-20 text-center max-w-[600px] mx-auto'
+        className='py-10 text-center max-w-[600px] mx-auto space-y-6'
         data-aos='fade-up'
       >
-        <h2>Let&apos;s Talk</h2>
-        <p>
+        <h3 className='text-xl lg:text-[54px]'>Let&apos;s Talk</h3>
+        <p className='text-grayish-400'>
           Join us as we explore tailored solutions, discuss industry insights,
           and collaborate to find the best strategies for your success.
         </p>
@@ -25,7 +25,7 @@ export default function page() {
         data-aos='fade-right'
       >
         <hgroup className='text-center'>
-          <h5>Speak to us</h5>
+          <h3>Speak to us</h3>
         </hgroup>
 
         <form action='' className='mt-7 space-y-4'>

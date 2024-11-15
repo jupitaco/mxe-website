@@ -7,58 +7,13 @@ import FeaturedBrands from '@/components/FeaturedBrands';
 import { PhoneIcon, TimeIcon, WhatsappIcon } from '@/components/SVGs/Icons';
 import { HomeReviewsSlider } from '@/components/HomeReviewsSlider';
 import Ready from '@/components/Ready';
+import BeyoundBanking from '@/components/BeyoundBanking';
+import {
+  beyoundBankingImgs,
+  beyoundBankingTtitle,
+  reviewDatas,
+} from '@/utils/constant';
 
-export const reviewDatas = [
-  {
-    id: 1,
-    comments: (
-      <p>
-        &quot;Payments are the main interaction point between Accenture&apos;s
-        financial services clients and their customers, and are core to our
-        relationships beyond that sector too.&quot;.
-      </p>
-    ),
-    name: 'Charolette Hanlin',
-    role: 'Co-Founder, Heroes Digital',
-    imgUrl: images.avatar5,
-  },
-  {
-    id: 2,
-    comments: (
-      <p>
-        &quot;Payments are pivotal in our financial operations, serving as the
-        primary interface between our finance department and clients &quot;.
-      </p>
-    ),
-    name: 'Novák Balázs',
-    role: 'Co-Founder, WoCommerce',
-    imgUrl: images.avatar6,
-  },
-  {
-    id: 3,
-    comments: (
-      <p>
-        &quot;Using this financial app has made me feel more organized and
-        efficient in managing my finances&quot;.
-      </p>
-    ),
-    name: 'Orosz Boldizsár',
-    role: 'Founder, Okta',
-    imgUrl: images.avatar7,
-  },
-  {
-    id: 4,
-    comments: (
-      <p>
-        &quot;Payments are pivotal in our financial operations, serving as the
-        primary interface between our finance department and clients &quot;.
-      </p>
-    ),
-    name: 'Novák Balázs',
-    role: 'Co-Founder, WoCommerce',
-    imgUrl: images.avatar6,
-  },
-];
 export default function Home() {
   return (
     <main className='bg-grayish'>
@@ -253,28 +208,10 @@ export default function Home() {
             </p>
           </article>
 
-          <article className='flex flex-wrap justify-between items-center'>
-            <figure className='w-full lg:w-5/12'>
-              <Image src={images.accountdeets} alt='' />
-            </figure>
-            <div className=' flex flex-col gap-7 w-full lg:w-6/12'>
-              <div className='py-6'>
-                <p>Virtual Accounts</p>
-                <p className='max-w-[601px] text-grayish-400 mt-4'>
-                  Lorem ipsum dolor sit amet consectetur. Ut feugiat ut mollis
-                  tempus nunc eu. Proin mauris felis aliquam risus ipsum nunc.
-                  Egestas tincidunt massa senectus lacinia vitae mauris viverra
-                  duis vitae. Sit pharetra amet.
-                </p>
-              </div>
-              <div className='py-6 text-[#818898] border-[#DFE1E7] border-t'>
-                <p>Send & Request Feature</p>
-              </div>
-              <div className='py-6 text-[#818898] border-[#DFE1E7] border-t'>
-                <p>Refer and earn 🥳</p>
-              </div>
-            </div>
-          </article>
+          <BeyoundBanking
+            titlesList={beyoundBankingTtitle}
+            imgList={beyoundBankingImgs}
+          />
         </section>
       </section>
 
