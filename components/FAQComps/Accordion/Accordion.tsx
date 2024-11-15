@@ -19,13 +19,13 @@ const Accordion: React.FC<IAccordion> = ({
       <hgroup>
         <h3
           onClick={action}
-          className={` d-flex justify-content-between ${styles.question} `}
+          className={`  items-center flex justify-between ${styles.question} `}
         >
-          {question} {toggle[id] ? <MdHorizontalRule /> : <MdAdd />}
+          {question} {toggle && toggle[id] ? <MdHorizontalRule /> : <MdAdd />}
         </h3>
       </hgroup>
 
-      {toggle[id] && (
+      {toggle && toggle[id] && (
         <>
           <section className={styles.answer}>{desc}</section>
         </>

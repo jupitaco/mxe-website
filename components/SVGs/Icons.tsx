@@ -755,3 +755,667 @@ export const TimeIcon = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
+
+export const StartIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={52}
+    height={52}
+    fill='none'
+    {...props}
+  >
+    <g filter='url(#a)'>
+      <rect
+        width={44}
+        height={44}
+        x={4}
+        y={2}
+        fill='#fff'
+        rx={10}
+        shapeRendering='crispEdges'
+      />
+      <rect
+        width={43}
+        height={43}
+        x={4.5}
+        y={2.5}
+        stroke='#ECEFF3'
+        rx={9.5}
+        shapeRendering='crispEdges'
+      />
+      <g fill='#0828B1' opacity={0.12}>
+        <path d='M22.4 15h-3.8c-.56 0-.84 0-1.054.109a1 1 0 0 0-.437.437C17 15.76 17 16.04 17 16.6v3.8c0 .56 0 .84.109 1.054a1 1 0 0 0 .437.437C17.76 22 18.04 22 18.6 22h3.8c.56 0 .84 0 1.054-.109a1 1 0 0 0 .437-.437C24 21.24 24 20.96 24 20.4v-3.8c0-.56 0-.84-.109-1.054a1 1 0 0 0-.437-.437C23.24 15 22.96 15 22.4 15ZM33.4 15h-3.8c-.56 0-.84 0-1.054.109a1 1 0 0 0-.437.437C28 15.76 28 16.04 28 16.6v3.8c0 .56 0 .84.109 1.054a1 1 0 0 0 .437.437C28.76 22 29.04 22 29.6 22h3.8c.56 0 .84 0 1.054-.109a1 1 0 0 0 .437-.437C35 21.24 35 20.96 35 20.4v-3.8c0-.56 0-.84-.109-1.054a1 1 0 0 0-.437-.437C34.24 15 33.96 15 33.4 15ZM33.4 26h-3.8c-.56 0-.84 0-1.054.109a1 1 0 0 0-.437.437C28 26.76 28 27.04 28 27.6v3.8c0 .56 0 .84.109 1.054a1 1 0 0 0 .437.437C28.76 33 29.04 33 29.6 33h3.8c.56 0 .84 0 1.054-.109a1 1 0 0 0 .437-.437C35 32.24 35 31.96 35 31.4v-3.8c0-.56 0-.84-.109-1.054a1 1 0 0 0-.437-.437C34.24 26 33.96 26 33.4 26ZM22.4 26h-3.8c-.56 0-.84 0-1.054.109a1 1 0 0 0-.437.437C17 26.76 17 27.04 17 27.6v3.8c0 .56 0 .84.109 1.054a1 1 0 0 0 .437.437C17.76 33 18.04 33 18.6 33h3.8c.56 0 .84 0 1.054-.109a1 1 0 0 0 .437-.437C24 32.24 24 31.96 24 31.4v-3.8c0-.56 0-.84-.109-1.054a1 1 0 0 0-.437-.437C23.24 26 22.96 26 22.4 26Z' />
+      </g>
+      <path
+        stroke='#0828B1'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth={2}
+        d='M22.4 15h-3.8c-.56 0-.84 0-1.054.109a1 1 0 0 0-.437.437C17 15.76 17 16.04 17 16.6v3.8c0 .56 0 .84.109 1.054a1 1 0 0 0 .437.437C17.76 22 18.04 22 18.6 22h3.8c.56 0 .84 0 1.054-.109a1 1 0 0 0 .437-.437C24 21.24 24 20.96 24 20.4v-3.8c0-.56 0-.84-.109-1.054a1 1 0 0 0-.437-.437C23.24 15 22.96 15 22.4 15ZM33.4 15h-3.8c-.56 0-.84 0-1.054.109a1 1 0 0 0-.437.437C28 15.76 28 16.04 28 16.6v3.8c0 .56 0 .84.109 1.054a1 1 0 0 0 .437.437C28.76 22 29.04 22 29.6 22h3.8c.56 0 .84 0 1.054-.109a1 1 0 0 0 .437-.437C35 21.24 35 20.96 35 20.4v-3.8c0-.56 0-.84-.109-1.054a1 1 0 0 0-.437-.437C34.24 15 33.96 15 33.4 15ZM33.4 26h-3.8c-.56 0-.84 0-1.054.109a1 1 0 0 0-.437.437C28 26.76 28 27.04 28 27.6v3.8c0 .56 0 .84.109 1.054a1 1 0 0 0 .437.437C28.76 33 29.04 33 29.6 33h3.8c.56 0 .84 0 1.054-.109a1 1 0 0 0 .437-.437C35 32.24 35 31.96 35 31.4v-3.8c0-.56 0-.84-.109-1.054a1 1 0 0 0-.437-.437C34.24 26 33.96 26 33.4 26ZM22.4 26h-3.8c-.56 0-.84 0-1.054.109a1 1 0 0 0-.437.437C17 26.76 17 27.04 17 27.6v3.8c0 .56 0 .84.109 1.054a1 1 0 0 0 .437.437C17.76 33 18.04 33 18.6 33h3.8c.56 0 .84 0 1.054-.109a1 1 0 0 0 .437-.437C24 32.24 24 31.96 24 31.4v-3.8c0-.56 0-.84-.109-1.054a1 1 0 0 0-.437-.437C23.24 26 22.96 26 22.4 26Z'
+      />
+    </g>
+    <defs>
+      <filter
+        id='a'
+        width={52}
+        height={52}
+        x={0}
+        y={0}
+        colorInterpolationFilters='sRGB'
+        filterUnits='userSpaceOnUse'
+      >
+        <feFlood floodOpacity={0} result='BackgroundImageFix' />
+        <feColorMatrix
+          in='SourceAlpha'
+          result='hardAlpha'
+          values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
+        />
+        <feOffset dy={2} />
+        <feGaussianBlur stdDeviation={2} />
+        <feComposite in2='hardAlpha' operator='out' />
+        <feColorMatrix values='0 0 0 0 0.0509804 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.15 0' />
+        <feBlend
+          in2='BackgroundImageFix'
+          result='effect1_dropShadow_166_6454'
+        />
+        <feBlend
+          in='SourceGraphic'
+          in2='effect1_dropShadow_166_6454'
+          result='shape'
+        />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const MsgIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={52}
+    height={52}
+    fill='none'
+    {...props}
+  >
+    <g filter='url(#a)'>
+      <rect
+        width={44}
+        height={44}
+        x={4}
+        y={2}
+        fill='#fff'
+        rx={10}
+        shapeRendering='crispEdges'
+      />
+      <rect
+        width={43}
+        height={43}
+        x={4.5}
+        y={2.5}
+        stroke='#ECEFF3'
+        rx={9.5}
+        shapeRendering='crispEdges'
+      />
+      <path
+        fill='#0828B1'
+        d='M35 24a9 9 0 0 1-12.384 8.342c-.2-.081-.3-.122-.381-.14a.908.908 0 0 0-.219-.024c-.083 0-.173.015-.353.045l-3.558.593c-.373.062-.56.093-.694.035a.5.5 0 0 1-.262-.262c-.058-.135-.027-.321.035-.694l.593-3.558c.03-.18.045-.27.045-.353a.908.908 0 0 0-.024-.219c-.018-.08-.059-.18-.14-.38A9 9 0 1 1 35 24Z'
+        opacity={0.12}
+      />
+      <path
+        stroke='#0828B1'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth={2}
+        d='M21.5 24h.01M26 24h.01m4.49 0h.01M26 33a9 9 0 1 0-8.342-5.616c.081.2.122.3.14.381a.908.908 0 0 1 .024.219c0 .083-.015.173-.045.353l-.593 3.558c-.062.373-.093.56-.035.694a.5.5 0 0 0 .262.262c.135.058.321.027.694-.035l3.558-.593c.18-.03.27-.045.353-.045.081 0 .14.006.219.024.08.018.18.059.38.14A8.973 8.973 0 0 0 26 33Zm-4-9a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm4.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm4.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z'
+      />
+    </g>
+    <defs>
+      <filter
+        id='a'
+        width={52}
+        height={52}
+        x={0}
+        y={0}
+        colorInterpolationFilters='sRGB'
+        filterUnits='userSpaceOnUse'
+      >
+        <feFlood floodOpacity={0} result='BackgroundImageFix' />
+        <feColorMatrix
+          in='SourceAlpha'
+          result='hardAlpha'
+          values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
+        />
+        <feOffset dy={2} />
+        <feGaussianBlur stdDeviation={2} />
+        <feComposite in2='hardAlpha' operator='out' />
+        <feColorMatrix values='0 0 0 0 0.0509804 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.15 0' />
+        <feBlend
+          in2='BackgroundImageFix'
+          result='effect1_dropShadow_166_6462'
+        />
+        <feBlend
+          in='SourceGraphic'
+          in2='effect1_dropShadow_166_6462'
+          result='shape'
+        />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const AccIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={52}
+    height={52}
+    fill='none'
+    {...props}
+  >
+    <g filter='url(#a)'>
+      <rect
+        width={44}
+        height={44}
+        x={4}
+        y={2}
+        fill='#fff'
+        rx={10}
+        shapeRendering='crispEdges'
+      />
+      <rect
+        width={43}
+        height={43}
+        x={4.5}
+        y={2.5}
+        stroke='#ECEFF3'
+        rx={9.5}
+        shapeRendering='crispEdges'
+      />
+      <path
+        fill='#0828B1'
+        d='M35 24a9 9 0 0 1-12.384 8.342c-.2-.081-.3-.122-.381-.14a.908.908 0 0 0-.219-.024c-.083 0-.173.015-.353.045l-3.558.593c-.373.062-.56.093-.694.035a.5.5 0 0 1-.262-.262c-.058-.135-.027-.321.035-.694l.593-3.558c.03-.18.045-.27.045-.353a.908.908 0 0 0-.024-.219c-.018-.08-.059-.18-.14-.38A9 9 0 1 1 35 24Z'
+        opacity={0.12}
+      />
+      <path
+        stroke='#0828B1'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth={2}
+        d='M21.5 24h.01M26 24h.01m4.49 0h.01M26 33a9 9 0 1 0-8.342-5.616c.081.2.122.3.14.381a.908.908 0 0 1 .024.219c0 .083-.015.173-.045.353l-.593 3.558c-.062.373-.093.56-.035.694a.5.5 0 0 0 .262.262c.135.058.321.027.694-.035l3.558-.593c.18-.03.27-.045.353-.045.081 0 .14.006.219.024.08.018.18.059.38.14A8.973 8.973 0 0 0 26 33Zm-4-9a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm4.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm4.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z'
+      />
+    </g>
+    <defs>
+      <filter
+        id='a'
+        width={52}
+        height={52}
+        x={0}
+        y={0}
+        colorInterpolationFilters='sRGB'
+        filterUnits='userSpaceOnUse'
+      >
+        <feFlood floodOpacity={0} result='BackgroundImageFix' />
+        <feColorMatrix
+          in='SourceAlpha'
+          result='hardAlpha'
+          values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
+        />
+        <feOffset dy={2} />
+        <feGaussianBlur stdDeviation={2} />
+        <feComposite in2='hardAlpha' operator='out' />
+        <feColorMatrix values='0 0 0 0 0.0509804 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.15 0' />
+        <feBlend
+          in2='BackgroundImageFix'
+          result='effect1_dropShadow_166_6462'
+        />
+        <feBlend
+          in='SourceGraphic'
+          in2='effect1_dropShadow_166_6462'
+          result='shape'
+        />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const SRFIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={52}
+    height={52}
+    fill='none'
+    {...props}
+  >
+    <g filter='url(#a)'>
+      <rect
+        width={44}
+        height={44}
+        x={4}
+        y={2}
+        fill='#fff'
+        rx={10}
+        shapeRendering='crispEdges'
+      />
+      <rect
+        width={43}
+        height={43}
+        x={4.5}
+        y={2.5}
+        stroke='#ECEFF3'
+        rx={9.5}
+        shapeRendering='crispEdges'
+      />
+      <path
+        fill='#0828B1'
+        d='M30.5 25.5c3.038 0 5.5-.895 5.5-2V31c0 1.105-2.462 2-5.5 2s-5.5-.895-5.5-2v-7.5c0 1.105 2.462 2 5.5 2Z'
+        opacity={0.12}
+      />
+      <path
+        stroke='#0828B1'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth={2}
+        d='M27 17c0 1.105-2.462 2-5.5 2s-5.5-.895-5.5-2m11 0c0-1.105-2.462-2-5.5-2s-5.5.895-5.5 2m11 0v1.5M16 17v12c0 1.105 2.462 2 5.5 2m0-8c-.169 0-.335-.003-.5-.008-2.803-.092-5-.949-5-1.992m5.5 6c-3.038 0-5.5-.895-5.5-2m20-1.5c0 1.105-2.462 2-5.5 2s-5.5-.895-5.5-2m11 0c0-1.105-2.462-2-5.5-2s-5.5.895-5.5 2m11 0V31c0 1.105-2.462 2-5.5 2s-5.5-.895-5.5-2v-7.5m11 3.75c0 1.105-2.462 2-5.5 2s-5.5-.895-5.5-2'
+      />
+    </g>
+    <defs>
+      <filter
+        id='a'
+        width={52}
+        height={52}
+        x={0}
+        y={0}
+        colorInterpolationFilters='sRGB'
+        filterUnits='userSpaceOnUse'
+      >
+        <feFlood floodOpacity={0} result='BackgroundImageFix' />
+        <feColorMatrix
+          in='SourceAlpha'
+          result='hardAlpha'
+          values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
+        />
+        <feOffset dy={2} />
+        <feGaussianBlur stdDeviation={2} />
+        <feComposite in2='hardAlpha' operator='out' />
+        <feColorMatrix values='0 0 0 0 0.0509804 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.15 0' />
+        <feBlend
+          in2='BackgroundImageFix'
+          result='effect1_dropShadow_166_6479'
+        />
+        <feBlend
+          in='SourceGraphic'
+          in2='effect1_dropShadow_166_6479'
+          result='shape'
+        />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const ChargebackIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={52}
+    height={52}
+    fill='none'
+    {...props}
+  >
+    <g filter='url(#a)'>
+      <rect
+        width={44}
+        height={44}
+        x={4}
+        y={2}
+        fill='#fff'
+        rx={10}
+        shapeRendering='crispEdges'
+      />
+      <rect
+        width={43}
+        height={43}
+        x={4.5}
+        y={2.5}
+        stroke='#ECEFF3'
+        rx={9.5}
+        shapeRendering='crispEdges'
+      />
+      <path
+        fill='#0828B1'
+        d='m33 22 .417-1.46c.198-.693.297-1.039.22-1.313a1 1 0 0 0-.436-.577c-.242-.15-.602-.15-1.322-.15H20.121c-.72 0-1.08 0-1.322.15a1 1 0 0 0-.435.577c-.078.274.021.62.219 1.313L19 22h14Z'
+        opacity={0.12}
+      />
+      <path
+        stroke='#0828B1'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth={2}
+        d='M33 22H19m14 0 1.864 3.107c.418.696.627 1.044.735 1.42a3 3 0 0 1 .113 1.022c-.025.39-.154.775-.41 1.545l-.208.624c-.394 1.18-.59 1.77-.955 2.206a3 3 0 0 1-1.203.868c-.53.208-1.152.208-2.396.208h-9.08c-1.245 0-1.867 0-2.396-.208a3 3 0 0 1-1.203-.868c-.365-.436-.562-1.026-.955-2.206l-.208-.624c-.257-.77-.385-1.155-.41-1.545a3.001 3.001 0 0 1 .113-1.023c.108-.375.317-.723.735-1.42L19 22m14 0 .417-1.46c.198-.693.297-1.039.22-1.313a1 1 0 0 0-.436-.577c-.242-.15-.602-.15-1.322-.15H20.12c-.72 0-1.08 0-1.322.15a1 1 0 0 0-.436.577c-.077.274.022.62.22 1.313L19 22m7-3.5h-3.536c-.52 0-1.02-.21-1.389-.586A2.019 2.019 0 0 1 20.5 16.5c0-.53.207-1.04.575-1.414a1.946 1.946 0 0 1 1.39-.586c2.75 0 3.535 4 3.535 4Zm0 0h3.536c.52 0 1.02-.21 1.388-.586.369-.375.576-.884.576-1.414 0-.53-.207-1.04-.576-1.414a1.947 1.947 0 0 0-1.388-.586c-2.75 0-3.536 4-3.536 4Z'
+      />
+    </g>
+    <defs>
+      <filter
+        id='a'
+        width={52}
+        height={52}
+        x={0}
+        y={0}
+        colorInterpolationFilters='sRGB'
+        filterUnits='userSpaceOnUse'
+      >
+        <feFlood floodOpacity={0} result='BackgroundImageFix' />
+        <feColorMatrix
+          in='SourceAlpha'
+          result='hardAlpha'
+          values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
+        />
+        <feOffset dy={2} />
+        <feGaussianBlur stdDeviation={2} />
+        <feComposite in2='hardAlpha' operator='out' />
+        <feColorMatrix values='0 0 0 0 0.0509804 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.15 0' />
+        <feBlend
+          in2='BackgroundImageFix'
+          result='effect1_dropShadow_166_6485'
+        />
+        <feBlend
+          in='SourceGraphic'
+          in2='effect1_dropShadow_166_6485'
+          result='shape'
+        />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const VCardsIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={52}
+    height={52}
+    fill='none'
+    {...props}
+  >
+    <g filter='url(#a)'>
+      <rect
+        width={44}
+        height={44}
+        x={4}
+        y={2}
+        fill='#fff'
+        rx={10}
+        shapeRendering='crispEdges'
+      />
+      <rect
+        width={43}
+        height={43}
+        x={4.5}
+        y={2.5}
+        stroke='#ECEFF3'
+        rx={9.5}
+        shapeRendering='crispEdges'
+      />
+      <path
+        fill='#0828B1'
+        d='M16 20.2V22h20v-1.8c0-1.12 0-1.68-.218-2.108a2 2 0 0 0-.874-.874C34.48 17 33.92 17 32.8 17H19.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C16 18.52 16 19.08 16 20.2Z'
+        opacity={0.12}
+      />
+      <path
+        stroke='#0828B1'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth={2}
+        d='M36 22H16m9 4h-5m-4-5.8v7.6c0 1.12 0 1.68.218 2.108a2 2 0 0 0 .874.874C17.52 31 18.08 31 19.2 31h13.6c1.12 0 1.68 0 2.108-.218a2 2 0 0 0 .874-.874C36 29.48 36 28.92 36 27.8v-7.6c0-1.12 0-1.68-.218-2.108a2 2 0 0 0-.874-.874C34.48 17 33.92 17 32.8 17H19.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C16 18.52 16 19.08 16 20.2Z'
+      />
+    </g>
+    <defs>
+      <filter
+        id='a'
+        width={52}
+        height={52}
+        x={0}
+        y={0}
+        colorInterpolationFilters='sRGB'
+        filterUnits='userSpaceOnUse'
+      >
+        <feFlood floodOpacity={0} result='BackgroundImageFix' />
+        <feColorMatrix
+          in='SourceAlpha'
+          result='hardAlpha'
+          values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
+        />
+        <feOffset dy={2} />
+        <feGaussianBlur stdDeviation={2} />
+        <feComposite in2='hardAlpha' operator='out' />
+        <feColorMatrix values='0 0 0 0 0.0509804 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.15 0' />
+        <feBlend
+          in2='BackgroundImageFix'
+          result='effect1_dropShadow_166_6491'
+        />
+        <feBlend
+          in='SourceGraphic'
+          in2='effect1_dropShadow_166_6491'
+          result='shape'
+        />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const TPIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={52}
+    height={52}
+    fill='none'
+    {...props}
+  >
+    <g filter='url(#a)'>
+      <rect
+        width={44}
+        height={44}
+        x={4}
+        y={2}
+        fill='#fff'
+        rx={10}
+        shapeRendering='crispEdges'
+      />
+      <rect
+        width={43}
+        height={43}
+        x={4.5}
+        y={2.5}
+        stroke='#ECEFF3'
+        rx={9.5}
+        shapeRendering='crispEdges'
+      />
+      <path
+        fill='#0828B1'
+        d='M35.2 34c.28 0 .42 0 .527-.054a.5.5 0 0 0 .219-.219C36 33.62 36 33.48 36 33.2V22.8c0-.28 0-.42-.054-.527a.5.5 0 0 0-.219-.218C35.62 22 35.48 22 35.2 22h-2.4c-.28 0-.42 0-.527.055a.5.5 0 0 0-.219.218C32 22.38 32 22.52 32 22.8v2.4c0 .28 0 .42-.055.527a.5.5 0 0 1-.218.218C31.62 26 31.48 26 31.2 26h-2.4c-.28 0-.42 0-.527.055a.5.5 0 0 0-.218.218C28 26.38 28 26.52 28 26.8v2.4c0 .28 0 .42-.055.527a.5.5 0 0 1-.218.218C27.62 30 27.48 30 27.2 30h-2.4c-.28 0-.42 0-.527.055a.5.5 0 0 0-.218.218C24 30.38 24 30.52 24 30.8v2.4c0 .28 0 .42.055.527a.5.5 0 0 0 .218.219c.107.054.247.054.527.054h10.4Z'
+        opacity={0.12}
+      />
+      <path
+        stroke='#0828B1'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth={2}
+        d='M35.2 34c.28 0 .42 0 .527-.054a.5.5 0 0 0 .219-.219C36 33.62 36 33.48 36 33.2V22.8c0-.28 0-.42-.054-.527a.5.5 0 0 0-.219-.218C35.62 22 35.48 22 35.2 22h-2.4c-.28 0-.42 0-.527.055a.5.5 0 0 0-.219.218C32 22.38 32 22.52 32 22.8v2.4c0 .28 0 .42-.055.527a.5.5 0 0 1-.218.218C31.62 26 31.48 26 31.2 26h-2.4c-.28 0-.42 0-.527.055a.5.5 0 0 0-.218.218C28 26.38 28 26.52 28 26.8v2.4c0 .28 0 .42-.055.527a.5.5 0 0 1-.218.218C27.62 30 27.48 30 27.2 30h-2.4c-.28 0-.42 0-.527.055a.5.5 0 0 0-.218.218C24 30.38 24 30.52 24 30.8v2.4c0 .28 0 .42.055.527a.5.5 0 0 0 .218.219c.107.054.247.054.527.054h10.4ZM24 18.8c0-.28 0-.42.055-.527a.5.5 0 0 1 .218-.218C24.38 18 24.52 18 24.8 18h2.4c.28 0 .42 0 .527.055a.5.5 0 0 1 .218.218c.055.107.055.247.055.527v2.4c0 .28 0 .42-.055.527a.5.5 0 0 1-.218.218C27.62 22 27.48 22 27.2 22h-2.4c-.28 0-.42 0-.527-.055a.5.5 0 0 1-.218-.218C24 21.62 24 21.48 24 21.2v-2.4ZM17 24.8c0-.28 0-.42.055-.527a.5.5 0 0 1 .218-.218C17.38 24 17.52 24 17.8 24h2.4c.28 0 .42 0 .527.055a.5.5 0 0 1 .218.218c.055.107.055.247.055.527v2.4c0 .28 0 .42-.055.527a.5.5 0 0 1-.218.218C20.62 28 20.48 28 20.2 28h-2.4c-.28 0-.42 0-.527-.055a.5.5 0 0 1-.218-.218C17 27.62 17 27.48 17 27.2v-2.4ZM16 14.8c0-.28 0-.42.055-.527a.5.5 0 0 1 .218-.218C16.38 14 16.52 14 16.8 14h2.4c.28 0 .42 0 .527.055a.5.5 0 0 1 .218.218c.055.107.055.247.055.527v2.4c0 .28 0 .42-.055.527a.5.5 0 0 1-.218.218C19.62 18 19.48 18 19.2 18h-2.4c-.28 0-.42 0-.527-.055a.5.5 0 0 1-.218-.218C16 17.62 16 17.48 16 17.2v-2.4Z'
+      />
+    </g>
+    <defs>
+      <filter
+        id='a'
+        width={52}
+        height={52}
+        x={0}
+        y={0}
+        colorInterpolationFilters='sRGB'
+        filterUnits='userSpaceOnUse'
+      >
+        <feFlood floodOpacity={0} result='BackgroundImageFix' />
+        <feColorMatrix
+          in='SourceAlpha'
+          result='hardAlpha'
+          values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
+        />
+        <feOffset dy={2} />
+        <feGaussianBlur stdDeviation={2} />
+        <feComposite in2='hardAlpha' operator='out' />
+        <feColorMatrix values='0 0 0 0 0.0509804 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.15 0' />
+        <feBlend
+          in2='BackgroundImageFix'
+          result='effect1_dropShadow_166_6498'
+        />
+        <feBlend
+          in='SourceGraphic'
+          in2='effect1_dropShadow_166_6498'
+          result='shape'
+        />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const RefIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={52}
+    height={52}
+    fill='none'
+    {...props}
+  >
+    <g filter='url(#a)'>
+      <rect
+        width={44}
+        height={44}
+        x={4}
+        y={2}
+        fill='#fff'
+        rx={10}
+        shapeRendering='crispEdges'
+      />
+      <rect
+        width={43}
+        height={43}
+        x={4.5}
+        y={2.5}
+        stroke='#ECEFF3'
+        rx={9.5}
+        shapeRendering='crispEdges'
+      />
+      <path
+        fill='#0828B1'
+        d='M27.53 20.352a3.5 3.5 0 1 1 .941-4.704 3.5 3.5 0 1 1-.941 4.704Z'
+        opacity={0.12}
+      />
+      <path
+        stroke='#0828B1'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth={2}
+        d='M27.53 20.352a3.5 3.5 0 1 1 .941-4.704M20 32.088h2.61c.34 0 .679.04 1.009.12l2.758.67c.598.147 1.222.16 1.826.043l3.05-.593a4.204 4.204 0 0 0 2.127-1.108l2.158-2.098a1.503 1.503 0 0 0 0-2.169 1.61 1.61 0 0 0-2.06-.143l-2.515 1.835c-.36.263-.799.405-1.25.405h-2.428 1.546c.871 0 1.577-.687 1.577-1.534v-.307c0-.703-.492-1.317-1.194-1.487l-2.385-.58A5.03 5.03 0 0 0 25.643 25c-.965 0-2.711.799-2.711.799L20 27.025M34 18.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-18 8.1v5.8c0 .56 0 .84.109 1.054a1 1 0 0 0 .437.437C16.76 34 17.04 34 17.6 34h.8c.56 0 .84 0 1.054-.109a1 1 0 0 0 .437-.437C20 33.24 20 32.96 20 32.4v-5.8c0-.56 0-.84-.109-1.054a1 1 0 0 0-.437-.437C19.24 25 18.96 25 18.4 25h-.8c-.56 0-.84 0-1.054.109a1 1 0 0 0-.437.437C16 25.76 16 26.04 16 26.6Z'
+      />
+    </g>
+    <defs>
+      <filter
+        id='a'
+        width={52}
+        height={52}
+        x={0}
+        y={0}
+        colorInterpolationFilters='sRGB'
+        filterUnits='userSpaceOnUse'
+      >
+        <feFlood floodOpacity={0} result='BackgroundImageFix' />
+        <feColorMatrix
+          in='SourceAlpha'
+          result='hardAlpha'
+          values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
+        />
+        <feOffset dy={2} />
+        <feGaussianBlur stdDeviation={2} />
+        <feComposite in2='hardAlpha' operator='out' />
+        <feColorMatrix values='0 0 0 0 0.0509804 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.15 0' />
+        <feBlend
+          in2='BackgroundImageFix'
+          result='effect1_dropShadow_166_6504'
+        />
+        <feBlend
+          in='SourceGraphic'
+          in2='effect1_dropShadow_166_6504'
+          result='shape'
+        />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const KYCIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={52}
+    height={52}
+    fill='none'
+    {...props}
+  >
+    <g filter='url(#a)'>
+      <rect
+        width={44}
+        height={44}
+        x={4}
+        y={2}
+        fill='#fff'
+        rx={10}
+        shapeRendering='crispEdges'
+      />
+      <rect
+        width={43}
+        height={43}
+        x={4.5}
+        y={2.5}
+        stroke='#ECEFF3'
+        rx={9.5}
+        shapeRendering='crispEdges'
+      />
+      <path
+        fill='#0828B1'
+        d='M18 26.8c0-1.68 0-2.52.327-3.162a3 3 0 0 1 1.311-1.311C20.28 22 21.12 22 22.8 22h6.4c1.68 0 2.52 0 3.162.327a3 3 0 0 1 1.311 1.311C34 24.28 34 25.12 34 26.8v1.4c0 1.68 0 2.52-.327 3.162a3 3 0 0 1-1.311 1.311C31.72 33 30.88 33 29.2 33h-6.4c-1.68 0-2.52 0-3.162-.327a3 3 0 0 1-1.311-1.311C18 30.72 18 29.88 18 28.2v-1.4Z'
+        opacity={0.12}
+      />
+      <path
+        stroke='#0828B1'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth={2}
+        d='M21 22v-2a5 5 0 0 1 9.584-2M26 26.5v2M22.8 33h6.4c1.68 0 2.52 0 3.162-.327a3 3 0 0 0 1.311-1.311C34 30.72 34 29.88 34 28.2v-1.4c0-1.68 0-2.52-.327-3.162a3 3 0 0 0-1.311-1.311C31.72 22 30.88 22 29.2 22h-6.4c-1.68 0-2.52 0-3.162.327a3 3 0 0 0-1.311 1.311C18 24.28 18 25.12 18 26.8v1.4c0 1.68 0 2.52.327 3.162a3 3 0 0 0 1.311 1.311C20.28 33 21.12 33 22.8 33Z'
+      />
+    </g>
+    <defs>
+      <filter
+        id='a'
+        width={52}
+        height={52}
+        x={0}
+        y={0}
+        colorInterpolationFilters='sRGB'
+        filterUnits='userSpaceOnUse'
+      >
+        <feFlood floodOpacity={0} result='BackgroundImageFix' />
+        <feColorMatrix
+          in='SourceAlpha'
+          result='hardAlpha'
+          values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
+        />
+        <feOffset dy={2} />
+        <feGaussianBlur stdDeviation={2} />
+        <feComposite in2='hardAlpha' operator='out' />
+        <feColorMatrix values='0 0 0 0 0.0509804 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.15 0' />
+        <feBlend
+          in2='BackgroundImageFix'
+          result='effect1_dropShadow_166_6510'
+        />
+        <feBlend
+          in='SourceGraphic'
+          in2='effect1_dropShadow_166_6510'
+          result='shape'
+        />
+      </filter>
+    </defs>
+  </svg>
+);

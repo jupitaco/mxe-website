@@ -246,6 +246,10 @@ select {
   background: #1053f3 url('../public/assets/line-9.png') top left no-repeat;
   background-size: cover;
 }
+.custom {
+  background: url('../public/assets/customizebg.png') top left no-repeat;
+  background-size: cover;
+}
 
 /* ====Media Query Start ===== */
 @media screen and (max-width: 900px) {
