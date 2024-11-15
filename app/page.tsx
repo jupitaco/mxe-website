@@ -214,7 +214,7 @@ export default function Home() {
             See What Our Users Are Saying
           </h3>
           <p className='text-grayish-400 mt-5'>
-            Here's what some of our customers say about our platform.
+            Here&apos;s what some of our customers say about our platform.
           </p>
         </hgroup>
         <div className='container'>

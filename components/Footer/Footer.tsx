@@ -3,7 +3,7 @@ import Link from 'next/link';
 import BrandLogo from '../BrandLogo';
 import { FaDribbble, FaFacebook, FaTwitter } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa6';
-import { aboutRoutes, featuresRoutes, legalRoutes } from './Routes';
+import { aboutRoutes, featuresRoutes, legalRoutes } from './routes';
 
 const Footer = () => {
   return (
