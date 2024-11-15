@@ -3,8 +3,6 @@ import Image from 'next/image';
 import React from 'react';
 import btclogos from '@/public/assets/logosssss.png';
 import Ready from '@/components/Ready';
-import Link from 'next/link';
-import { FaArrowRightLong } from 'react-icons/fa6';
 import AnimatedBorder from '@/components/AnimatedBorder';
 
 export default function page() {
@@ -12,7 +10,7 @@ export default function page() {
     <main className='py-5'>
       <section className='container grid grid-cols-1 lg:grid-cols-2 gap-3'>
         <article
-          className='rounded-[10px] bg-grayish-200 py-5 px-5 lg:px-10 space-y-5'
+          className='rounded-[10px] bg-grayish-200 py-5 px-5 lg:px-10 justify-center  flex flex-col gap-5 items-center lg:items-start text-center lg:text-start'
           data-aos='fade-right'
           data-aos-duration='1000'
         >
@@ -43,9 +41,9 @@ export default function page() {
         </article>
       </section>
       <section className='container   my-10'>
-        <h3 className='max-w-[600px]'>
-          Lorem ipsum dolor sit amet consectetur. Eget tincidunt.
-        </h3>
+        <hgroup className='max-w-[600px] text-center lg:text-start mb-10'>
+          <h3>Lorem ipsum dolor sit amet consectetur. Eget tincidunt.</h3>
+        </hgroup>
         <section className='  grid grid-cols-1 lg:grid-cols-2 gap-3 mt-5'>
           <article
             className=' bg-[#EFF9F9] rounded-[10px] flex flex-col justify-between gap-5 overflow-hidden'

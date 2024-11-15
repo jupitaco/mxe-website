@@ -1,12 +1,14 @@
+import BeyoundBanking from '@/components/BeyoundBanking';
 import Ready from '@/components/Ready';
 import { images } from '@/exports/images';
+import { getStartedSteps } from '@/utils/constant';
 import Image from 'next/image';
 import React from 'react';
 
 export default function page() {
   return (
     <main>
-      <section className='container py-10 bg-[#FEFEFE]'>
+      <section className='container py-10 bg-[#FEFEFE] overflow-hidden'>
         <div
           className='text-center  space-y-6 max-w-[700px] mx-auto'
           data-aos='fade-down'
@@ -29,16 +31,16 @@ export default function page() {
         </figure>
       </section>
 
-      <section className='py-10 container '>
-        <hgroup className='mb-4 max-w-[500px]'>
+      <section className='pb-10 container '>
+        <hgroup className='mb-8 max-w-[500px] text-center lg:text-start'>
           <h3>A More Powerful Alternative to Your Bank&apos;s Debit Card</h3>
         </hgroup>
         <article className='grid grid-cols-1 lg:grid-cols-3 gap-4 overflow-hidden'>
-          <div className='bg-[#EFF9F9] rounded-2xl p-8 space-y-6'>
+          <div className='bg-[#EFF9F9] rounded-2xl p-8 space-y-6 overflow-hidden'>
             <figure
               data-aos='zoom-in'
               data-aos-duration='1000'
-              className='w-9//12 mx-auto'
+              className='w-9/12 mx-auto'
             >
               <Image src={images.instant} alt='' />
             </figure>
@@ -56,7 +58,7 @@ export default function page() {
               </p>
             </div>
           </div>
-          <div className='bg-[#ECF6EE] rounded-2xl pt-8 space-y-6'>
+          <div className='bg-[#ECF6EE] rounded-2xl p-8 space-y-6 overflow-hidden flex flex-col justify-between'>
             <figure
               data-aos='zoom-in'
               data-aos-duration='1000'
@@ -78,8 +80,12 @@ export default function page() {
               </p>
             </div>
           </div>
-          <div className='bg-[#FBF2E8] rounded-2xl p-8 space-y-6'>
-            <figure data-aos='zoom-in' data-aos-duration='1000'>
+          <div className='bg-[#FBF2E8] rounded-2xl p-8 space-y-6 overflow-hidden'>
+            <figure
+              data-aos='zoom-in'
+              data-aos-duration='1000'
+              className='w-9/12 mx-auto'
+            >
               <Image src={images.control} alt='' />
             </figure>
 
@@ -98,7 +104,7 @@ export default function page() {
         </article>
       </section>
 
-      <section className='mt-10 py-20 bg-white'>
+      <section className='py-10 bg-white overflow-hidden'>
         <section className='container'>
           <article className='space-y-4 mb-10'>
             <h3>Get started in 3 steps</h3>
@@ -110,35 +116,11 @@ export default function page() {
             </p>
           </article>
 
-          <article className='flex flex-wrap justify-between items-center'>
-            <figure className='w-full lg:w-5/12' data-aos='fade-right'>
-              <Image src={images.fundcard} alt='' />
-            </figure>
-            <div
-              className=' flex flex-col gap-7 w-full lg:w-6/12'
-              data-aos='fade-left'
-            >
-              <div className='py-6'>
-                <p>Create Your Virtual Card</p>
-              </div>
-              <div className='py-6 text-[#818898] border-[#DFE1E7] border-t'>
-                <p>Fund Your Virtual Card</p>
-                <p className='max-w-[601px] text-grayish-400 mt-4'>
-                  Top up your virtual card by funding it through any of these
-                  three methods: deposit in NGN, transfer from your MXE wallet,
-                  or link your bank account. Enjoy the flexibility of loading
-                  your card however it suits you best.
-                </p>
-              </div>
-              <div className='py-6 text-[#818898] border-[#DFE1E7] border-t'>
-                <p>Start Spending</p>
-              </div>
-            </div>
-          </article>
+          <BeyoundBanking data={getStartedSteps} />
         </section>
       </section>
 
-      <section className='py-10'>
+      <section className='py-5'>
         <Ready />
       </section>
     </main>

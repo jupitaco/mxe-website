@@ -8,11 +8,7 @@ import { PhoneIcon, TimeIcon, WhatsappIcon } from '@/components/SVGs/Icons';
 import { HomeReviewsSlider } from '@/components/HomeReviewsSlider';
 import Ready from '@/components/Ready';
 import BeyoundBanking from '@/components/BeyoundBanking';
-import {
-  beyoundBankingImgs,
-  beyoundBankingTtitle,
-  reviewDatas,
-} from '@/utils/constant';
+import { beyoundBankingTtitle, reviewDatas } from '@/utils/constant';
 
 export default function Home() {
   return (
@@ -90,7 +86,7 @@ export default function Home() {
       <section className='my-10'>
         <section className='container rounded-3xl bg-[#F1F2F4] p-3 flex flex-wrap '>
           <article
-            className={`${styles.spendGlobal} flex flex-col justify-between w-full lg:w-5/12  p-5 lg:p-10 lg:rounded-tr-none rounded-t-3xl rounded-l-3xl rounded-b-none lg:rounded-bl-3xl`}
+            className={`${styles.spendGlobal} flex flex-col justify-between w-full lg:w-5/12  p-5 lg:p-10 lg:rounded-tr-none rounded-t-3xl rounded-l-3xl rounded-b-none rounded-bl-none lg:rounded-bl-3xl`}
             data-aos='fade-right'
             data-aos-duration='1000'
           >
@@ -128,7 +124,7 @@ export default function Home() {
       <section className='my-10'>
         <section className='container rounded-3xl bg-[#F1F2F4] p-3 flex flex-wrap '>
           <article
-            className={`${styles.spendGlobal} flex flex-col justify-between w-full lg:w-5/12   p-5 lg:p-10 lg:rounded-tr-none rounded-t-3xl rounded-l-3xl rounded-b-none lg:rounded-bl-3xl`}
+            className={`${styles.spendGlobal} flex flex-col justify-between w-full lg:w-5/12   p-5 lg:p-10 lg:rounded-tr-none rounded-t-3xl rounded-l-3xl rounded-b-none rounded-bl-none lg:rounded-bl-3xl`}
             data-aos='fade-right'
             data-aos-duration='1000'
           >
@@ -208,10 +204,7 @@ export default function Home() {
             </p>
           </article>
 
-          <BeyoundBanking
-            titlesList={beyoundBankingTtitle}
-            imgList={beyoundBankingImgs}
-          />
+          <BeyoundBanking data={beyoundBankingTtitle} />
         </section>
       </section>
 

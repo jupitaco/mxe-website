@@ -4,17 +4,16 @@ import Image, { StaticImageData } from 'next/image';
 import React, { FC, useState } from 'react';
 
 type TabDatas = {
-  titlesList: { id: string; title: string; desc: string }[];
-  imgList: { id: string; src: StaticImageData }[];
+  data: { id: string; title: string; desc: string; src: StaticImageData }[];
 };
 
-const BeyoundBanking: FC<TabDatas> = ({ titlesList, imgList }) => {
+const BeyoundBanking: FC<TabDatas> = ({ data }) => {
   const [activeTab, setActiveTab] = useState<string>('tab1');
 
   return (
-    <article className='flex flex-wrap-reverse justify-between items-center'>
+    <article className='flex flex-wrap-reverse justify-between items-center gap-y-7'>
       <aside className='w-full lg:w-5/12'>
-        {imgList.map(({ id, src }) => (
+        {data.map(({ id, src }) => (
           <figure key={id}>
             {activeTab === id && <Image src={src} alt='' />}
           </figure>
@@ -22,7 +21,7 @@ const BeyoundBanking: FC<TabDatas> = ({ titlesList, imgList }) => {
       </aside>
 
       <ul className='flex flex-col gap-7 w-full lg:w-6/12 ]'>
-        {titlesList.map(({ id, title, desc }) => (
+        {data.map(({ id, title, desc }) => (
           <li
             key={id}
             onClick={() => setActiveTab(id)}

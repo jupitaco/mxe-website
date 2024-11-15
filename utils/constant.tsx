@@ -5,23 +5,41 @@ export const beyoundBankingTtitle = [
     id: 'tab1',
     title: 'Virtual Accounts',
     desc: 'Lorem ipsum dolor sit amet consectetur. Ut feugiat ut mollis tempus nunc eu. Proin mauris felis aliquam risus ipsum nunc. Egestas tincidunt massa senectus lacinia vitae mauris viverra duis vitae. Sit pharetra amet.',
+    src: images.vaccount,
   },
   {
     id: 'tab2',
     title: 'Send & Request Feature',
     desc: 'Lorem ipsum dolor sit amet consectetur. Ut feugiat ut mollis tempus nunc eu. Proin mauris felis aliquam risus ipsum nunc. Egestas tincidunt massa senectus lacinia vitae mauris viverra duis vitae. Sit pharetra amet.',
+    src: images.sendandreq,
   },
   {
     id: 'tab3',
     title: 'Refer and earn 🥳',
     desc: 'Lorem ipsum dolor sit amet consectetur. Ut feugiat ut mollis tempus nunc eu. Proin mauris felis aliquam risus ipsum nunc. Egestas tincidunt massa senectus lacinia vitae mauris viverra duis vitae. Sit pharetra amet.',
+    src: images.referloan,
   },
 ];
 
-export const beyoundBankingImgs = [
-  { id: 'tab1', src: images.vaccount },
-  { id: 'tab2', src: images.sendandreq },
-  { id: 'tab3', src: images.referloan },
+export const getStartedSteps = [
+  {
+    id: 'tab1',
+    title: 'Create Your Virtual Card',
+    desc: 'Lorem ipsum dolor sit amet consectetur. Ut feugiat ut mollis tempus nunc eu. Proin mauris felis aliquam risus ipsum nunc. Egestas tincidunt massa senectus lacinia vitae mauris viverra duis vitae. Sit pharetra amet.',
+    src: images.fundcard,
+  },
+  {
+    id: 'tab2',
+    title: 'Fund Your Virtual Card',
+    desc: 'Lorem ipsum dolor sit amet consectetur. Ut feugiat ut mollis tempus nunc eu. Proin mauris felis aliquam risus ipsum nunc. Egestas tincidunt massa senectus lacinia vitae mauris viverra duis vitae. Sit pharetra amet.',
+    src: images.fundcard,
+  },
+  {
+    id: 'tab3',
+    title: 'Start Spending',
+    desc: 'Lorem ipsum dolor sit amet consectetur. Ut feugiat ut mollis tempus nunc eu. Proin mauris felis aliquam risus ipsum nunc. Egestas tincidunt massa senectus lacinia vitae mauris viverra duis vitae. Sit pharetra amet.',
+    src: images.fundcard,
+  },
 ];
 
 export const reviewDatas = [
@@ -88,9 +106,9 @@ export const stepsData = [
   {
     id: 2,
     title: 'Multi-Currency Support for Flexibility',
-    desc: `MXE&apos;s DeFi to Fiat feature supports a wide variety of
+    desc: `MXE's DeFi to Fiat feature supports a wide variety of
           cryptocurrencies and fiat currencies, allowing you to convert
-          assets across different markets. Whether you&apos;re dealing
+          assets across different markets. Whether you're dealing
           with popular tokens like USDC, ETH, or stablecoins.`,
   },
   {
@@ -98,7 +116,7 @@ export const stepsData = [
     title: 'No Hidden Fees',
     desc: `Transparency is key. With MXE, there are no hidden fees or
           unexpected charges. Every transaction is clear and
-          straightforward, so you know exactly what you&apos;re paying
+          straightforward, so you know exactly what you're paying
           for.`,
   },
 ];
