@@ -213,7 +213,7 @@ export default function Home() {
       </section>
 
       <section className='mt-10 py-20 bg-white'>
-        <article className='space-y-4 mb-10'>
+        <article className='space-y-4 mb-10 text-center'>
           <h3>Customize your financial experience</h3>
         </article>
 

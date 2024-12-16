@@ -43,7 +43,7 @@ const AnimatedMockup = () => {
   return (
     <section
       ref={containerRef}
-      className='relative custom h-[820px] overflow-hidden'
+      className='relative custom  h-[820px] overflow-hidden'
     >
       <figure id='phone' className='w-full lg:w-3/12 mx-auto opacity-0'>
         <Image src={images.heroPhone1} alt='' />

@@ -2,7 +2,7 @@ import React from 'react';
 
 import Image from 'next/image';
 import { images } from '@/exports/images';
-import { AppStore, GooglePlay } from '../../SVGs/Icons';
+import { AppStore, FillSpeedIcon, GooglePlay } from '../../SVGs/Icons';
 
 const Hero = () => {
   return (
@@ -13,7 +13,13 @@ const Hero = () => {
           data-aos='fade-right'
           data-aos-duration='1000'
         >
-          <h1 className=''>One App, Endless Financial Possibilities</h1>
+          <h1 className=''>
+            One App, Endless Financial Possibilities
+            <span className='hidden lg:inline-block ml-2 '>
+              {' '}
+              <FillSpeedIcon />
+            </span>
+          </h1>
           <p className='text-base lg:text-xl text-grayish-400'>
             Whether you&apos;re a seasoned crypto user or new to digital
             finance, we&apos;re here to make your financial journey smarter,

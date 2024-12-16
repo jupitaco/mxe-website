@@ -9,7 +9,16 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { IoChevronDown } from 'react-icons/io5';
 import BrandLogo from '../BrandLogo';
-import { ConvertIcon, SafeIcon, SendIcon, VirtualCard } from '../SVGs/Icons';
+import {
+  AboutIcon,
+  BillsIcon,
+  BlogIcon,
+  HireIcon,
+  LetterIcon,
+  SpeedIcon,
+  VAccIcon,
+  VCardIcon,
+} from '../SVGs/Icons';
 
 interface ToggleState {
   [key: string]: boolean;
@@ -24,7 +33,8 @@ const NavBar = () => {
     setToggle((prev) => ({ ...prev, [id]: !prev[id] }));
   };
 
-  const [toggleDropdown, setToggleDropdown] = useState(false);
+  const [toggleDropdown, setToggleDropdown] = useState<ToggleState>({});
+  const [drop, setToggleDrop] = useState(false);
 
   const modalRef = useRef<HTMLDivElement>(null);
 
@@ -34,51 +44,90 @@ const NavBar = () => {
       title: 'Products',
       // url: '#',
       dropdown: {
-        payment: [
-          {
-            id: 7,
-            title: 'Send and Receive',
-            subtitle: 'Global payments in a few clicks',
-            icon: <SendIcon />,
-          },
-          {
-            id: 9,
-            title: 'MXE Virtual Card',
-            subtitle: 'Seamless online shopping',
-            icon: <VirtualCard />,
-            url: '/virtual-card',
-          },
-        ],
-
-        features: [
+        title: 'Products',
+        data: [
           {
             id: 10,
-            title: 'Bill Payments',
-            subtitle: 'Schedule and make bill payment',
-            icon: <SendIcon />,
+            title: 'DeFi to Fiat Conversion',
+            path: '/features',
+            subtitle:
+              'Lorem ipsum dolor sit amet consectetur. Commodo sed facilisi.',
+            icon: <SpeedIcon />,
           },
-          // { id: 10, title: 'Data Science', url: '/data-science' },
           {
             id: 11,
-            title: 'Save in USD',
-            subtitle: 'Save local currency in USD',
-            icon: <SafeIcon />,
+            title: 'Virtual Accounts',
+            path: '#',
+            subtitle:
+              'Lorem ipsum dolor sit amet consectetur. Commodo sed facilisi.',
+            icon: <VAccIcon />,
           },
           {
             id: 12,
-            title: 'Convert Currencies',
-            subtitle: 'Convert money to different currencies',
-            icon: <ConvertIcon />,
+            title: 'Virtual Card',
+            path: '/virtual-card',
+            subtitle:
+              'Instantly create a virtual card that allows you to shop online',
+            icon: <VCardIcon />,
+          },
+          {
+            id: 13,
+            title: 'Bills Payment',
+            path: '#',
+            subtitle:
+              'Pay your utility bills, subscriptions, and more right from the app.',
+            icon: <BillsIcon />,
           },
         ],
       },
     },
-    { id: 2, title: 'We’re Hiring', url: '#' },
-    { id: 4, title: 'Resources', url: '#' },
-    { id: 5, title: 'Company', url: '#' },
-    { id: 5, title: 'API', url: '#' },
-    // { id: 2, title: 'Company', url: '/about-us' },
-    // { id: 4, title: 'Blog', url: '/blog' },
+    {
+      id: 119,
+      title: 'Company',
+      dropdown: {
+        title: 'Company',
+        data: [
+          {
+            id: 10,
+            title: 'About Us',
+            path: '/about-us',
+            subtitle:
+              'Lorem ipsum dolor sit amet consectetur. Commodo sed facilisi.',
+            icon: <AboutIcon />,
+          },
+          {
+            id: 11,
+            title: 'We’re Hiring',
+            path: '#',
+            subtitle:
+              'Lorem ipsum dolor sit amet consectetur. Commodo sed facilisi.',
+            icon: <HireIcon />,
+          },
+          {
+            id: 12,
+            title: 'Blog',
+            path: '/blog',
+            subtitle:
+              'Lorem ipsum dolor sit amet consectetur. Commodo sed facilisi.',
+            icon: <BlogIcon />,
+          },
+          {
+            id: 13,
+            title: 'Join Newsletter',
+            path: '#',
+            subtitle:
+              'Lorem ipsum dolor sit amet consectetur. Commodo sed facilisi.',
+            icon: <LetterIcon />,
+          },
+        ],
+      },
+    },
+    // { id: 2, title: 'We’re Hiring', url: '#' },
+    // { id: 4, title: 'Resources', url: '#' },
+    // { id: 5, title: 'Company', url: '#' },
+    // { id: 5, title: 'API', url: '#' },
+    { id: 2, title: 'Contact Us', url: '/contact-us' },
+    { id: 4, title: 'Blog', url: '/blog' },
     // { id: 5, title: 'FAQs', url: '/faqs' },
   ];
 
@@ -86,11 +135,12 @@ const NavBar = () => {
   useEffect(() => {
     const handleClickOutside = (e: any) => {
       if (
-        toggleDropdown &&
+        (toggleDropdown || drop) &&
         modalRef.current &&
         !modalRef.current.contains(e.target)
       ) {
-        setToggleDropdown(false);
+        setToggleDropdown({});
+        setToggleDrop(false);
       }
     };
 
@@ -99,7 +149,11 @@ const NavBar = () => {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [toggleDropdown]);
+  }, [toggleDropdown, drop]);
+
+  const handleDropToggle = (id: string) => {
+    setToggleDropdown((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
 
   return (
     <header className='border-b'>
@@ -132,67 +186,50 @@ const NavBar = () => {
                   {linkList.map(({ id, title, url, dropdown }) => (
                     <div key={id}>
                       {dropdown ? (
-                        <li
-                          key={id}
-                          className={
-                            currentRoute === '/features'
-                              ? styles.isActive
-                              : styles.notActive
-                          }
-                        >
+                        <li key={id}>
                           <div className='flex items-center gap-1 '>
-                            <Link
-                              onClick={() => handleToggle('navbar')}
-                              href='/features'
-                            >
-                              Features
-                            </Link>
+                            <span>{dropdown?.title}</span>
                             <span
-                              onClick={() => setToggleDropdown(!toggleDropdown)}
+                              onClick={() => handleDropToggle(dropdown?.title)}
                             >
                               <IoChevronDown
                                 className={
-                                  toggleDropdown
+                                  toggleDropdown[dropdown?.title]
                                     ? 'rotate-180 transition-all'
                                     : ''
                                 }
                               />
                             </span>
                           </div>
-                          {toggleDropdown && (
+                          {toggleDropdown[dropdown?.title] && (
                             <div
                               className={`${styles.drop} flex flex-col lg:flex-row justify-center lg:justify-between gap-3  `}
                               ref={modalRef}
                             >
                               <ul className={`  flex flex-col text-start`}>
-                                <h6 className='font-normal'>Payments</h6>
-                                {dropdown.payment.map(
-                                  ({ id, title, icon, subtitle, url }) => (
+                                {dropdown.data.map(
+                                  ({ id, title, icon, subtitle, path }) => (
                                     <Link
-                                      href={url ? url : '#'}
                                       key={id}
-                                      className='flex my-3 text-black'
+                                      href={path}
+                                      className={` ${
+                                        currentRoute === path
+                                          ? styles.isActive
+                                          : styles.notActive
+                                      } flex my-3 gap-3 `}
+                                      onClick={() => handleToggle('navbar')}
                                     >
                                       {icon}
                                       <div>
-                                        <p>{title} </p>
-                                        <small> {subtitle} </small>
+                                        <p className='font-semibold !text-base'>
+                                          {title}{' '}
+                                        </p>
+                                        <small className='!text-Grey6'>
+                                          {' '}
+                                          {subtitle}{' '}
+                                        </small>
                                       </div>
                                     </Link>
-                                  ),
-                                )}
-                              </ul>
-                              <ul className={`  flex flex-col text-start`}>
-                                <h6 className='font-normal'>Features</h6>
-                                {dropdown.features.map(
-                                  ({ id, title, icon, subtitle }) => (
-                                    <li key={id} className='flex my-3'>
-                                      {icon}
-                                      <div>
-                                        <p>{title} </p>
-                                        <small> {subtitle} </small>
-                                      </div>
-                                    </li>
                                   ),
                                 )}
                               </ul>
