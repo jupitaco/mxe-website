@@ -1419,3 +1419,169 @@ export const KYCIcon = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
+
+export const SpeedIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={20}
+    height={22}
+    fill='none'
+    {...props}
+  >
+    <path
+      stroke='#0828B1'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      strokeWidth={2}
+      d='M11 1 1 13h9l-1 8L19 9h-9l1-8Z'
+    />
+  </svg>
+);
+
+export const VAccIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={18}
+    height={22}
+    fill='none'
+    {...props}
+  >
+    <path
+      stroke='#0828B1'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      strokeWidth={2}
+      d='M1 18.5A2.5 2.5 0 0 1 3.5 16H17M1 18.5A2.5 2.5 0 0 0 3.5 21H17V1H3.5A2.5 2.5 0 0 0 1 3.5v15Z'
+    />
+  </svg>
+);
+
+export const VCardIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={24}
+    height={24}
+    fill='none'
+    {...props}
+  >
+    <path
+      stroke='#0828B1'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      strokeWidth={2}
+      d='M18.75 6H5.25a1.5 1.5 0 0 0-1.5 1.5v9a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-9a1.5 1.5 0 0 0-1.5-1.5ZM3.75 10.5h16.5'
+    />
+  </svg>
+);
+
+export const BillsIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={24}
+    height={24}
+    fill='none'
+    {...props}
+  >
+    <path
+      stroke='#0828B1'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      strokeWidth={2}
+      d='M19.5 11.31V12a7.5 7.5 0 1 1-4.447-6.855'
+    />
+    <path
+      stroke='#0828B1'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      strokeWidth={2}
+      d='M19.5 6 12 13.508l-2.25-2.25'
+    />
+  </svg>
+);
+
+export const AboutIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={20}
+    height={20}
+    fill='none'
+    {...props}
+  >
+    <path
+      stroke='#0828B1'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      strokeWidth={1.5}
+      d='M10 17.5a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15ZM10 13h.007M10 7v3'
+    />
+  </svg>
+);
+
+export const HireIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={24}
+    height={24}
+    fill='none'
+    {...props}
+  >
+    <path
+      stroke='#0828B1'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      strokeWidth={2}
+      d='M21 20c0-1.742-1.67-3.223-4-3.773M15 20c0-2.21-2.686-4-6-4s-6 1.79-6 4m12-7a4 4 0 0 0 0-8m-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z'
+    />
+  </svg>
+);
+
+export const BlogIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={24}
+    height={24}
+    fill='none'
+    {...props}
+  >
+    <path
+      stroke='#0828B1'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      strokeWidth={2}
+      d='M9 21h6M12 3a6 6 0 0 0-5.019 9.29c.954 1.452 1.43 2.178 1.493 2.286.55.965.449.625.518 1.734.008.124.008.313.008.69a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1c0-.377 0-.566.008-.69.07-1.11-.033-.769.518-1.734.062-.108.54-.834 1.493-2.287A6 6 0 0 0 12 3Z'
+    />
+  </svg>
+);
+
+export const LetterIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={24}
+    height={24}
+    fill='none'
+    {...props}
+  >
+    <path
+      stroke='#0828B1'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      strokeWidth={2}
+      d='m4 6 6.108 4.612.002.002c.678.497 1.017.746 1.389.842.328.085.673.085 1.002 0 .372-.096.712-.345 1.392-.844 0 0 3.917-3.006 6.107-4.612M3 15.8V8.2c0-1.12 0-1.68.218-2.108.192-.377.497-.682.874-.874C4.52 5 5.08 5 6.2 5h11.6c1.12 0 1.68 0 2.107.218.377.192.683.497.875.874.218.427.218.987.218 2.105v7.607c0 1.118 0 1.676-.218 2.104a2.002 2.002 0 0 1-.875.874c-.427.218-.986.218-2.104.218H6.197c-1.118 0-1.678 0-2.105-.218a2 2 0 0 1-.874-.874C3 17.48 3 16.92 3 15.8Z'
+    />
+  </svg>
+);
+
+export const FillSpeedIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={39}
+    height={50}
+    fill='none'
+    {...props}
+  >
+    <path
+      fill='#1463FF'
+      d='M22.242 18.938c0 .588.477 1.064 1.064 1.064H37.59c.858 0 1.363.964.875 1.67L19.216 49.474c-.594.858-1.939.438-1.939-.605V30.996c0-.587-.476-1.064-1.064-1.064H1.93a1.064 1.064 0 0 1-.874-1.67L20.303.46c.594-.857 1.94-.437 1.94.606v17.872Z'
+    />
+  </svg>
+);
