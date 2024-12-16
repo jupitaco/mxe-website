@@ -19,6 +19,7 @@ import brand5a from '@/public/assets/brand5a.png';
 import sendPhone from '@/public/assets/sendPhone.png';
 import heroPhone1 from '@/public/assets/heroPhone1.png';
 import heroPhone2 from '@/public/assets/heroPhone2.png';
+import heroPhone3 from '@/public/assets/heroPhone3.png';
 import savingPhone from '@/public/assets/savingPhone.png';
 import transformFinance from '@/public/assets/transformFinance.png';
 import virtualCardPhone from '@/public/assets/virtualCardPhone.png';
@@ -55,6 +56,7 @@ import referloan from '@/public/assets/referloan.png';
 
 export const images = {
   sendPhone,
+  heroPhone3,
   vaccount,
   sendandreq,
   referloan,
