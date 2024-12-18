@@ -28,7 +28,7 @@ export default function Home() {
             Instant crypto liquidity in seconds
           </h3>
 
-          <button className='main-btn !border-[2px] !border-[#2A37AF]'>
+          <button className='main-btn !border-[2px] !border-[#2A37AF] !rounded-[8px]'>
             Learn More
           </button>
         </div>
@@ -100,7 +100,7 @@ export default function Home() {
                 the need for a physical card.
               </p>
               <div>
-                <button className='outline-btn !border-[#D0D5DD99] !text-[#344054] !roounded-[8px]'>
+                <button className='outline-btn !border-[#D0D5DD99] !text-[#344054] !rounded-[8px] '>
                   Learn More
                 </button>
               </div>
@@ -212,7 +212,7 @@ export default function Home() {
         </section>
       </section>
 
-      <section className='mt-10 py-20 bg-white'>
+      <section className='mt-10 pt-20 bg-white'>
         <article className='space-y-4 mb-10 text-center'>
           <h3>Customize your financial experience</h3>
         </article>
@@ -220,12 +220,12 @@ export default function Home() {
         <AnimatedMockup />
       </section>
 
-      <section className='flex h-[617px] flex-col justify-around bg-[#EFF9F9] py-10'>
+      <section className='flex  flex-col justify-around bg-[#EFF9F9] py-10'>
         <hgroup className='text-center'>
-          <h3 className='font-medium text-xl lg:text-4xl'>
+          <h3 className='font-medium text-2xl lg:text-4xl w-52 md:w-full mx-auto'>
             See What Our Users Are Saying
           </h3>
-          <p className='text-grayish-400 mt-5'>
+          <p className='text-grayish-400 mt-5 w-72 md:w-full mx-auto'>
             Here&apos;s what some of our customers say about our platform.
           </p>
         </hgroup>

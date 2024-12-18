@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  AppStore,
-  BorderedAppStore,
-  BorderedGooglePlay,
-  GooglePlay,
-} from './SVGs/Icons';
+import { AppStore, GooglePlay } from './SVGs/Icons';
 import Image from 'next/image';
 import { images } from '@/exports/images';
 
@@ -13,9 +8,11 @@ const Ready = () => {
     <section className='ready container flex flex-wrap gap-3 justify-between items-center rounded-3xl overflow-hidden'>
       <article
         data-aos='fade-right'
-        className={`w-full lg:w-[73%]   rounded-[32px] flex flex-col justify-center gap-4 text-[#fff] px-4 md:px-10 py-5 md:py-0`}
+        className={`w-full lg:w-[73%]   rounded-[32px] flex flex-col justify-center gap-4 text-[#fff] px-4 md:px-10 py-5 lg:py-0`}
       >
-        <h3>Ready to Master the Future of Finance?</h3>
+        <h3 className='font-bold max-w-[250px] lg:max-w-[800px]'>
+          Ready to Master the Future of Finance?
+        </h3>
         <p>
           Lorem ipsum dolor sit amet consectetur. Ac consequat id lorem id massa
           viverra sed. Amet sed lobortis neque scelerisque. Nunc leo augue

@@ -59,10 +59,10 @@ export const aboutRoutes = [
     path: '/faqs',
   },
 
-  {
-    name: 'Blog',
-    path: '/blog',
-  },
+  // {
+  //   name: 'Blog',
+  //   path: '/blog',
+  // },
   {
     name: 'Contact Us',
     path: '/contact-us',

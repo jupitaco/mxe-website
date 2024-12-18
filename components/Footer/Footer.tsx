@@ -100,10 +100,11 @@ const Footer = () => {
         </main>
 
         <hr className=' mb-4 mt-5' />
-        <section className={`container flex justify-between`}>
-          <div className=''>
-            <p>MXE labs © 2024</p>
-          </div>
+        <section
+          className={`container flex flex-col md:flex-row items-center gap-5 justify-between`}
+        >
+          <p className='text-Grey6'>© 2024 MXE Labs. All right reserved </p>
+
           <div>
             <h4 className='flex justify-start md:justify-end gap-2 items-center '>
               <FaLinkedinIn /> <FaTwitter /> <FaFacebook />

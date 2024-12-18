@@ -80,18 +80,6 @@ export const reviewDatas = [
     role: 'Founder, Okta',
     imgUrl: images.avatar7,
   },
-  {
-    id: 4,
-    comments: (
-      <p>
-        &quot;Payments are pivotal in our financial operations, serving as the
-        primary interface between our finance department and clients &quot;.
-      </p>
-    ),
-    name: 'Novák Balázs',
-    role: 'Co-Founder, WoCommerce',
-    imgUrl: images.avatar6,
-  },
 ];
 
 export const stepsData = [

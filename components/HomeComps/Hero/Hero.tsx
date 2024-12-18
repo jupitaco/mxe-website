@@ -9,12 +9,12 @@ const Hero = () => {
     <section className={` py-5`}>
       <section className='container grid grid-cols-1 lg:grid-cols-2 gap-4'>
         <article
-          className='bg-white rounded-lg p-7 flex flex-col justify-center gap-4 text-center lg:text-start'
-          data-aos='fade-right'
-          data-aos-duration='1000'
+          className='bg-white rounded-lg p-7  flex flex-col justify-center gap-4 text-center lg:text-start'
+          // data-aos='fade-right'
+          // data-aos-duration='1000'
         >
           <h1 className=''>
-            One App, Endless Financial Possibilities
+            One App, <br /> Endless Financial Possibilities
             <span className='hidden lg:inline-block ml-2 '>
               {' '}
               <FillSpeedIcon />
