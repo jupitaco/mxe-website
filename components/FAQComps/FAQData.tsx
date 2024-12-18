@@ -4,6 +4,15 @@ import {
   Bills,
   Deposit,
   ExchangeRate,
+  FaqIcon1,
+  FaqIcon2,
+  FaqIcon3,
+  FaqIcon4,
+  FaqIcon5,
+  FaqIcon6,
+  FaqIcon7,
+  FaqIcon8,
+  FaqIcon9,
   GlobalPay,
   LegalIcon,
   MXECard,
@@ -223,5 +232,71 @@ export const faqData = [
       { qid: 'question4', qtitle: 'Why should I verify my account?' },
       { qid: 'question5', qtitle: 'How do I verify my account?' },
     ],
+  },
+];
+
+export const faqDataNew = [
+  {
+    id: 1,
+    title: 'Getting Started',
+    icon: <FaqIcon1 />,
+    subtitle:
+      'Get realtime updates when users start or end subscriptions, or have low funds in their wallet.',
+  },
+  {
+    id: 2,
+    title: 'Community Workshop',
+    icon: <FaqIcon2 />,
+    subtitle:
+      'Collaborative space where individuals come together to share knowledge, skills, and ideas within a specific community or interest group',
+  },
+  {
+    id: 3,
+    title: 'Accounts',
+    icon: <FaqIcon3 />,
+    subtitle:
+      'Records within a system that store personal or organizational information, preferences, and activities.',
+  },
+  {
+    id: 4,
+    title: 'Send and Receive Feature',
+    icon: <FaqIcon4 />,
+    subtitle:
+      'Get realtime updates when users start or end subscriptions, or have low funds in their wallet.',
+  },
+  {
+    id: 5,
+    title: 'Chargeback',
+    icon: <FaqIcon5 />,
+    subtitle:
+      'Lorem ipsum dolor sit amet consectetur. Morbi tempor metus maecenas suspendisse vitae ut. Ut pretium in sed lorem mattis ut.',
+  },
+  {
+    id: 6,
+    title: 'Virtual Cards',
+    icon: <FaqIcon6 />,
+    subtitle:
+      'Get realtime updates when users start or end subscriptions, or have low funds in their wallet.',
+  },
+  {
+    id: 7,
+    title: 'Thirds Party Integrations',
+    icon: <FaqIcon7 />,
+    subtitle:
+      'Get realtime updates when users start or end subscriptions, or have low funds in their wallet.',
+  },
+  {
+    id: 8,
+    title: 'Refunds',
+    icon: <FaqIcon8 />,
+    subtitle:
+      'Get realtime updates when users start or end subscriptions, or have low funds in their wallet.',
+  },
+  {
+    id: 9,
+    title: 'KYC',
+    icon: <FaqIcon9 />,
+    subtitle:
+      'Get realtime updates when users start or end subscriptions, or have low funds in their wallet.',
   },
 ];

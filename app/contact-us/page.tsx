@@ -11,11 +11,11 @@ export default function page() {
   return (
     <main className='pt-10 bg-[#F6F8FA]'>
       <hgroup
-        className='py-10 text-center max-w-[600px] mx-auto space-y-6'
-        data-aos='fade-up'
+        className='py-10 text-center max-w-80 lg:max-w-[600px] mx-auto space-y-6'
+        // data-aos='fade-up'
       >
-        <h3 className='text-xl lg:text-[54px]'>Let&apos;s Talk</h3>
-        <p className='text-grayish-400'>
+        <h3 className='text-[48px] lg:text-[54px]'>Let&apos;s Talk</h3>
+        <p className='text-grayish-400 text-xl'>
           Join us as we explore tailored solutions, discuss industry insights,
           and collaborate to find the best strategies for your success.
         </p>

@@ -1,48 +1,24 @@
 import React from 'react';
-import Image from 'next/image';
-import { FaCircle } from 'react-icons/fa';
 import styles from './Styles.module.scss';
 import Link from 'next/link';
-import { faqData } from './FAQData';
+import { faqDataNew } from './FAQData';
 
 const FaqCards = () => {
   return (
     <section
-      className={`${styles.cardWrapper} flex flex-wrap gap-5 justify-center w-11/12 md:w-9/12 mx-auto my-[100px]`}
+      className={`${styles.cardWrapper} grid grid-cols-1 lg:grid-cols-3 gap-4  w-11/12 md:w-9/12 mx-auto my-[100px]`}
     >
-      {faqData.map(({ id, title, icon, articles, authorImages, url }) => (
+      {faqDataNew.map(({ id, title, icon, subtitle }) => (
         <Link
-          href={`/faqs/${url}`}
-          className={`${styles.faqCard} w-full  md:w-[48%] lg:w-[31%] p-[10px] md:p-[26px] lg:p-[35px] `}
+          href={`/faqs/${id}`}
+          className={`${styles.faqCard}    p-[26px] lg:p-[35px] `}
           key={id}
         >
-          <div className='w-[24px] h-[25px] '>{icon} </div>
-          <h4 className='my-5'>{title}</h4>
-
-          <div className='flex justify-between items-center'>
-            <div className='flex items-center'>
-              {authorImages.map((item, idx) => (
-                <figure
-                  key={idx}
-                  className={`${
-                    authorImages.length > 3
-                      ? styles.overlapMore
-                      : styles.lilOverlap
-                  } w-[32px] h-[32px]`}
-                >
-                  <Image src={item} alt='' />
-                </figure>
-              ))}
-            </div>
-
-            <div className='flex justify-between items-center gap-1'>
-              <small> {authorImages.length} Authors </small>
-              <small>
-                <FaCircle />
-              </small>
-              <small> {articles} Articles </small>
-            </div>
+          <div className='w-[44px] h-[44px] rounded-xl bg-white shadow-md border border-[#ECEFF3] grid place-items-center '>
+            {icon}{' '}
           </div>
+          <h4 className='my-4'> {title}</h4>
+          <p className='text-Grey6 text-base'> {subtitle}</p>
         </Link>
       ))}
     </section>

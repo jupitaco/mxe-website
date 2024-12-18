@@ -127,7 +127,7 @@ const NavBar = () => {
     // { id: 5, title: 'Company', url: '#' },
     // { id: 5, title: 'API', url: '#' },
     { id: 2, title: 'Contact Us', url: '/contact-us' },
-    { id: 4, title: 'Blog', url: '/blog' },
+    // { id: 4, title: 'Blog', url: '/blog' },
     // { id: 5, title: 'FAQs', url: '/faqs' },
   ];
 
@@ -156,7 +156,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className='border-b'>
+    <header className='border-b sticky left-0 top-0 z-50'>
       <section
         className={`${styles.navContainer} flex items-center justify-between`}
       >
@@ -187,11 +187,12 @@ const NavBar = () => {
                     <div key={id}>
                       {dropdown ? (
                         <li key={id}>
-                          <div className='flex items-center gap-1 '>
+                          <p
+                            className='flex items-center gap-1 '
+                            onClick={() => handleDropToggle(dropdown?.title)}
+                          >
                             <span>{dropdown?.title}</span>
-                            <span
-                              onClick={() => handleDropToggle(dropdown?.title)}
-                            >
+                            <span>
                               <IoChevronDown
                                 className={
                                   toggleDropdown[dropdown?.title]
@@ -200,13 +201,13 @@ const NavBar = () => {
                                 }
                               />
                             </span>
-                          </div>
+                          </p>
                           {toggleDropdown[dropdown?.title] && (
                             <div
-                              className={`${styles.drop} flex flex-col lg:flex-row justify-center lg:justify-between gap-3  `}
+                              className={`${styles.drop} flex flex-col lg:flex-row justify-center lg:justify-between gap-3 w-full lg:w-[35%] `}
                               ref={modalRef}
                             >
-                              <ul className={`  flex flex-col text-start`}>
+                              <ul className={`  flex flex-col text-start `}>
                                 {dropdown.data.map(
                                   ({ id, title, icon, subtitle, path }) => (
                                     <Link
@@ -220,8 +221,8 @@ const NavBar = () => {
                                       onClick={() => handleToggle('navbar')}
                                     >
                                       {icon}
-                                      <div>
-                                        <p className='font-semibold !text-base'>
+                                      <div className='flex-1 max-w-52'>
+                                        <p className='!font-semibold !text-base'>
                                           {title}{' '}
                                         </p>
                                         <small className='!text-Grey6'>
