@@ -29,7 +29,7 @@ export const legalRoutes = [
   },
   {
     name: 'Privacy Policy',
-    path: '#',
+    path: '/privacy',
   },
   {
     name: 'Cookie Policy',
