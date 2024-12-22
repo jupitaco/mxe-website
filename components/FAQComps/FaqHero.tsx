@@ -1,5 +1,5 @@
 import React from 'react';
-import { IoMicOutline, IoSearch } from 'react-icons/io5';
+import { IoSearch } from 'react-icons/io5';
 import styles from './Styles.module.scss';
 
 const FaqHero = () => {
