@@ -259,7 +259,7 @@ const NavBar = () => {
                 </ul>
                 <div className='flex justify-start lg:justify-end  mt-8 lg:mt-0 w-11/12 lg:w-2/12'>
                   <a
-                    href='https://wa.me/message/DMUFZ4VU2SNCF1'
+                    href='#'
                     target='_blank'
                     rel='noreferrer'
                     className={`main-btn text-center w-full`}

@@ -118,8 +118,8 @@ export const AppStoress = ({
 export const AppStore = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    // width={180}
-    // height={52}
+    width={180}
+    height={52}
     viewBox='0 0 180 52'
     fill='none'
     {...props}
@@ -165,8 +165,8 @@ export const GooglePlays = ({
 export const GooglePlay = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    // width={180}
-    // height={52}
+    width={180}
+    height={52}
     viewBox='0 0 180 52'
     fill='none'
     {...props}
