@@ -33,8 +33,8 @@ const Hero = () => {
         </article>
 
         <figure
-          data-aos='zoom-in-right'
-          data-aos-duration='1000'
+          // data-aos='zoom-in-right'
+          // data-aos-duration='1000'
           className='overflow-hidden rounded-lg'
         >
           <Image

@@ -7,7 +7,7 @@ const Ready = () => {
   return (
     <section className='ready container flex flex-wrap gap-3 justify-between items-center rounded-3xl overflow-hidden'>
       <article
-        data-aos='fade-right'
+        // data-aos='fade-right'
         className={`w-full lg:w-[73%]   rounded-[32px] flex flex-col justify-center gap-4 text-[#fff] px-4 md:px-10 py-5 lg:py-0`}
       >
         <h3 className='font-bold max-w-[250px] lg:max-w-[800px]'>
@@ -27,7 +27,7 @@ const Ready = () => {
       </article>
       <figure
         className='w-full lg:w-[25%] px-5 pt-5 lg:pt-20'
-        data-aos='fade-left'
+        // data-aos='fade-left'
       >
         <Image src={images.readymock} alt='' />
       </figure>

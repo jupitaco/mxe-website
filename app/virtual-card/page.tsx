@@ -11,8 +11,8 @@ export default function page() {
       <section className='container py-10 bg-[#FEFEFE] overflow-hidden'>
         <div
           className='text-center  space-y-6 max-w-[700px] mx-auto'
-          data-aos='fade-down'
-          data-aos-duration=''
+          // data-aos='fade-down'
+          // data-aos-duration=''
         >
           <h1>
             Spend <b className='text-[#FF9C00] font-normal'> Globally</b> with
@@ -38,8 +38,8 @@ export default function page() {
         <article className='grid grid-cols-1 lg:grid-cols-3 gap-4 overflow-hidden'>
           <div className='bg-[#EFF9F9] rounded-2xl p-8 space-y-6 overflow-hidden'>
             <figure
-              data-aos='zoom-in'
-              data-aos-duration='1000'
+              // data-aos='zoom-in'
+              // data-aos-duration='1000'
               className='w-9/12 mx-auto'
             >
               <Image src={images.instant} alt='' />
@@ -47,8 +47,8 @@ export default function page() {
 
             <div
               className='space-y-3 text-center'
-              data-aos='fade-up'
-              data-aos-duration='1000'
+              // data-aos='fade-up'
+              // data-aos-duration='1000'
             >
               <h5 className='font-medium text0xl lg:text-3xl'>
                 Instant Activation
@@ -60,8 +60,8 @@ export default function page() {
           </div>
           <div className='bg-[#ECF6EE] rounded-2xl p-8 space-y-6 overflow-hidden flex flex-col justify-between'>
             <figure
-              data-aos='zoom-in'
-              data-aos-duration='1000'
+              // data-aos='zoom-in'
+              // data-aos-duration='1000'
               className='px-3'
             >
               <Image src={images.global} alt='' />
@@ -69,8 +69,8 @@ export default function page() {
 
             <div
               className='space-y-3 text-center px-8'
-              data-aos='fade-up'
-              data-aos-duration='1000'
+              // data-aos='fade-up'
+              // data-aos-duration='1000'
             >
               <h5 className='font-medium text0xl lg:text-3xl'>
                 Global Payments
@@ -82,8 +82,8 @@ export default function page() {
           </div>
           <div className='bg-[#FBF2E8] rounded-2xl p-8 space-y-6 overflow-hidden'>
             <figure
-              data-aos='zoom-in'
-              data-aos-duration='1000'
+              // data-aos='zoom-in'
+              // data-aos-duration='1000'
               className='w-9/12 mx-auto'
             >
               <Image src={images.control} alt='' />
@@ -91,8 +91,8 @@ export default function page() {
 
             <div
               className='space-y-3 text-center'
-              data-aos='fade-up'
-              data-aos-duration='1000'
+              // data-aos='fade-up'
+              // data-aos-duration='1000'
             >
               <h5 className='font-medium text0xl lg:text-3xl'>Full Control</h5>
               <p className='text-grayish-400'>

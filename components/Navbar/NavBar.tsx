@@ -156,7 +156,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className='border-b sticky left-0 top-0 z-50'>
+    <header className='border-b sticky left-0 top-0 z-[500] '>
       <section
         className={`${styles.navContainer} flex items-center justify-between`}
       >
@@ -164,8 +164,8 @@ const NavBar = () => {
           {/* Logo */}
           <section
             className={`w-5/12 lg:w-2/12 flex flex-row items-center`}
-            data-aos='zoom-out'
-            data-aos-duration='1500'
+            // data-aos='zoom-out'
+            // data-aos-duration='1500'
           >
             <BrandLogo />
           </section>
@@ -178,8 +178,8 @@ const NavBar = () => {
               {/* nav Links */}
 
               <section
-                data-aos='fade-right'
-                data-aos-duration='1500'
+                // data-aos='fade-right'
+                // data-aos-duration='1500'
                 className={` ${styles.navItems} flex flex-col lg:flex-row  w-full justify-between items-center !mt-[100px] lg:!mt-0`}
               >
                 <ul className='flex flex-col lg:flex-row w-full lg:w-9/12  justify-center items-center gap-4'>

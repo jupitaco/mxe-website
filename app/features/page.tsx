@@ -11,8 +11,8 @@ export default function page() {
       <section className='container grid grid-cols-1 lg:grid-cols-2 gap-3'>
         <article
           className='rounded-[10px] bg-grayish-200 py-5 px-5 lg:px-10 justify-center  flex flex-col gap-5 items-center lg:items-start text-center lg:text-start'
-          data-aos='fade-right'
-          data-aos-duration='1000'
+          // data-aos='fade-right'
+          // data-aos-duration='1000'
         >
           <h1>Bridge the Gap: Effortless DeFi to Fiat Swaps</h1>
           <p className='text-grayish-400'>
@@ -29,8 +29,8 @@ export default function page() {
 
         <article
           className='px-5 pt-5 bg-grayish-300 rounded-[10px] flex flex-col justify-end gap-5'
-          data-aos='fade-left'
-          data-aos-duration='1000'
+          // data-aos='fade-left'
+          // data-aos-duration='1000'
         >
           <figure className='w-6/12 mx-auto mb-5'>
             <Image src={btclogos} alt='' />
@@ -47,32 +47,35 @@ export default function page() {
         <section className='  grid grid-cols-1 lg:grid-cols-2 gap-3 mt-5'>
           <article
             className=' bg-[#EFF9F9] rounded-[10px] flex flex-col justify-between gap-5 overflow-hidden'
-            data-aos='fade-up'
-            data-aos-duration='1000'
+            // data-aos='fade-up'
+            // data-aos-duration='1000'
           >
             <div
               className='text-center pt-10'
-              data-aos='fade-down'
-              data-aos-duration='1000'
+              // data-aos='fade-down'
+              // data-aos-duration='1000'
             >
               <small>YOU ONLY NEED ONE APP</small>
               <h3 className='text-xl lg:text-5xl font-bold '>
                 Instant Conversion
               </h3>
             </div>
-            <figure className='' data-aos='fade-up' data-aos-delay='300'>
+            <figure
+              className=''
+              // data-aos='fade-up' data-aos-delay='300'
+            >
               <Image src={images.conversion} alt='' />
             </figure>
           </article>
           <article
             className='px-5 pt-5 bg-[#FBF2E8] rounded-[10px] flex flex-col justify-between gap-5 overflow-hidden'
-            data-aos='fade-up'
-            data-aos-duration='1000'
+            // data-aos='fade-up'
+            // data-aos-duration='1000'
           >
             <div
               className='text-center pt-10'
-              data-aos='fade-down'
-              data-aos-duration='1000'
+              // data-aos='fade-down'
+              // data-aos-duration='1000'
             >
               <small className='uppercase'>market-leading exchange rates</small>
               <h3 className='text-xl lg:text-5xl font-bold '>
@@ -81,8 +84,8 @@ export default function page() {
             </div>
             <figure
               className='mx-auto w-7/12'
-              data-aos='fade-up'
-              data-aos-delay='300'
+              // data-aos='fade-up'
+              // data-aos-delay='300'
             >
               <Image src={images.rates} alt='' />
             </figure>
@@ -106,13 +109,13 @@ export default function page() {
           <AnimatedBorder />
           <article
             className='px-5 pt-5 bg-grayish-300 rounded-[10px] flex flex-col justify-end gap-5 overflow-hidden'
-            data-aos='fade-up'
-            data-aos-duration='1000'
+            // data-aos='fade-up'
+            // data-aos-duration='1000'
           >
             <figure
               className='mx-auto w-8/12'
-              data-aos='fade-up'
-              data-aos-delay='300'
+              // data-aos='fade-up'
+              // data-aos-delay='300'
             >
               <Image src={images.fiat} alt='' />
             </figure>
