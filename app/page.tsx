@@ -21,8 +21,8 @@ export default function Home() {
       >
         <div
           className='mb-20 flex flex-col justify-center items-center gap-9'
-          data-aos='fade-down'
-          data-aos-duration='1000'
+          // data-aos='fade-down'
+          // data-aos-duration='1000'
         >
           <h3 className='text-center  text-white font-bold'>
             Instant crypto liquidity in seconds
@@ -33,12 +33,15 @@ export default function Home() {
           </button>
         </div>
 
-        <figure className=' hidden lg:block' data-aos='fade-up'>
+        <figure
+          className=' hidden lg:block'
+          // data-aos='fade-up'
+        >
           <Image
             src={images.instantmock1}
             alt=''
-            data-aos='fade-up'
-            data-aos-delay='300'
+            // data-aos='fade-up'
+            // data-aos-delay='300'
           />
         </figure>
         <figure className='lg:hidden block' data-aos='fade-up'>
@@ -87,8 +90,8 @@ export default function Home() {
         <section className='container rounded-3xl bg-[#F1F2F4] p-3 flex flex-wrap '>
           <article
             className={`${styles.spendGlobal} flex flex-col justify-between w-full lg:w-5/12  p-5 lg:p-10 lg:rounded-tr-none rounded-t-3xl rounded-l-3xl rounded-b-none rounded-bl-none lg:rounded-bl-3xl`}
-            data-aos='fade-right'
-            data-aos-duration='1000'
+            // data-aos='fade-right'
+            // data-aos-duration='1000'
           >
             <h3 className='text-2xl lg:text-5xl mt-0 lg:mt-10'>
               Spend globally
@@ -109,13 +112,13 @@ export default function Home() {
           <div className='w-full lg:w-7/12  lg:p-0 p-3 overflow-hidden lg:bg-transparent bg-white rounded-b-lg'>
             <figure
               className=' overflow-hidden h-[375px] lg:h-[550px] rounded-lg'
-              data-aos='fade-up'
+              // data-aos='fade-up'
             >
               <Image
                 src={images.spend}
                 alt=''
-                data-aos='fade-up'
-                data-aos-delay='300'
+                // data-aos='fade-up'
+                // data-aos-delay='300'
                 className='!h-full  object-cover object-bottom'
               />
             </figure>
@@ -127,8 +130,8 @@ export default function Home() {
         <section className='container rounded-3xl bg-[#F1F2F4] p-3 flex flex-wrap '>
           <article
             className={`${styles.spendGlobal} flex flex-col justify-between w-full lg:w-5/12   p-5 lg:p-10 lg:rounded-tr-none rounded-t-3xl rounded-l-3xl rounded-b-none rounded-bl-none lg:rounded-bl-3xl`}
-            data-aos='fade-right'
-            data-aos-duration='1000'
+            // data-aos='fade-right'
+            // data-aos-duration='1000'
           >
             <h3 className='text-2xl lg:text-5xl mt-0 lg:mt-10'>
               Pay bills effortlessly{' '}
@@ -149,13 +152,13 @@ export default function Home() {
           <div className='w-full lg:w-7/12  lg:p-0 p-3 overflow-hidden lg:bg-transparent bg-white rounded-b-lg'>
             <figure
               className=' overflow-hidden h-[375px] lg:h-full rounded-lg'
-              data-aos='fade-up'
+              // data-aos='fade-up'
             >
               <Image
                 src={images.paybills}
                 alt=''
-                data-aos='fade-up'
-                data-aos-delay='300'
+                // data-aos='fade-up'
+                // data-aos-delay='300'
                 className='!h-full  object-cover'
               />
             </figure>

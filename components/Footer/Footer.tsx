@@ -13,8 +13,8 @@ const Footer = () => {
           className={`container  flex flex-col md:flex-row justify-between gap-3 py-8`}
         >
           <section
-            data-aos-duration='1500'
-            data-aos='zoom-out'
+            // data-aos-duration='1500'
+            // data-aos='zoom-out'
             className='w-full md:w-4/12'
           >
             <div>
@@ -28,13 +28,16 @@ const Footer = () => {
 
           <section className='w-full md:w-8/12 flex flex-wrap gap-3 justify-between'>
             <ul
-              data-aos-duration='1500'
-              data-aos='fade-left'
+              // data-aos-duration='1500'
+              // data-aos='fade-left'
               className={`${styles.footerW} `}
             >
               <h4>Features</h4>
               {featuresRoutes.map(({ name, path }) => (
-                <li key={name} data-aos='fade-left'>
+                <li
+                  key={name}
+                  // data-aos='fade-left'
+                >
                   <Link href={path} className='text-base'>
                     {' '}
                     {name}
@@ -43,14 +46,17 @@ const Footer = () => {
               ))}
             </ul>
             <ul
-              data-aos-duration='1500'
-              data-aos='fade-left'
+              // data-aos-duration='1500'
+              // data-aos='fade-left'
               className={`${styles.footerW} `}
             >
               <h4>Legal</h4>
 
               {legalRoutes.map(({ name, path }) => (
-                <li key={name} data-aos='fade-left'>
+                <li
+                  key={name}
+                  // data-aos='fade-left'
+                >
                   <Link href={path} className='text-base'>
                     {' '}
                     {name}
@@ -59,14 +65,17 @@ const Footer = () => {
               ))}
             </ul>
             <ul
-              data-aos-duration='1500'
-              data-aos='fade-left'
+              // data-aos-duration='1500'
+              // data-aos='fade-left'
               className={`${styles.footerW} `}
             >
               <h4>About</h4>
 
               {aboutRoutes.map(({ name, path }) => (
-                <li key={name} data-aos='fade-left'>
+                <li
+                  key={name}
+                  // data-aos='fade-left'
+                >
                   <Link href={path} className='text-base'>
                     {' '}
                     {name}
@@ -75,8 +84,8 @@ const Footer = () => {
               ))}
             </ul>
             <ul
-              data-aos-duration='1500'
-              data-aos='fade-left'
+              // data-aos-duration='1500'
+              // data-aos='fade-left'
               className={`${styles.footerW} `}
             >
               <h4 className='font-normal'>Contact</h4>
